@@ -46,10 +46,10 @@ proxies:
     path: /ws
     headers:
       Host: 148.113.207.224
-- name: VLESS-WS-TLS-🇺🇸(US)-shops.myshopify.com
+- name: VLESS-WS-TLS-🇺🇸(US)-docker.1panel.live
   type: vless
-  server: shops.myshopify.com
-  port: 443
+  server: docker.1panel.live
+  port: 2053
   uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
   network: ws
   tls: true
@@ -72,32 +72,6 @@ proxies:
     path: /?ed=2560
     headers:
       Host: sni.111000.dynv6.net
-- name: VLESS-WS-TLS-🇨🇦(CA)-104.24.196.20
-  type: vless
-  server: 104.24.196.20
-  port: 443
-  uuid: 5ac0a5b2-33dd-44d4-ad2b-838cead54f7d
-  network: ws
-  tls: true
-  servername: rAyAn-cOnFiG-ca-1.pAriSa.dPdNs.oRg
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-    headers:
-      Host: rAyAn-cOnFiG-ca-1.pAriSa.dPdNs.oRg
-- name: VLESS-WS-TLS-🇺🇸(US)-visa.com
-  type: vless
-  server: visa.com
-  port: 443
-  uuid: 495c0dad-3268-4470-ac57-887c5089db0d
-  network: ws
-  tls: true
-  servername: ziyong.boringdad.netlib.re
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ziyong.boringdad.netlib.re
 - name: VLESS-WS-TLS-🇨🇦(CA)-cdnjs.com
   type: vless
   server: cdnjs.com
@@ -111,6 +85,32 @@ proxies:
     path: /ws
     headers:
       Host: rAyAn-cOnFiG-ca-1.pAriSa.dPdNs.oRg
+- name: VLESS-WS-TLS-🇺🇸(US)-www.gov.se
+  type: vless
+  server: www.gov.se
+  port: 2053
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  network: ws
+  tls: true
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.dynv6.net
+- name: VLESS-WS-TLS-🇺🇸(US)-www.gco.gov.qa
+  type: vless
+  server: www.gco.gov.qa
+  port: 2053
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  network: ws
+  tls: true
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.dynv6.net
 - name: VLESS-WS-TLS-🇨🇦(CA)-cdnjs.com_1
   type: vless
   server: cdnjs.com
@@ -124,10 +124,33 @@ proxies:
     path: /ws
     headers:
       Host: rAyAn-cOnFiG-ca-1.pArSa.dPdNs.oRg
-- name: VLESS-WS-TLS-🇨🇦(CA)-208.103.161.32
+- name: VLESS-WS-TLS-🇺🇸(US)-208.103.161.33
   type: vless
-  server: 208.103.161.32
+  server: 208.103.161.33
   port: 2053
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  network: ws
+  tls: true
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.dynv6.net
+- name: VLESS-TCP-REALITY-🇺🇸(US)-77.110.119.225
+  type: vless
+  server: 77.110.119.225
+  port: 443
+  uuid: 4819860c-0e62-4804-9c59-967e5c2bed7a
+  network: tcp
+  tls: true
+  servername: st.ozone.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-shops.myshopify.com
+  type: vless
+  server: shops.myshopify.com
+  port: 443
   uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
   network: ws
   tls: true
@@ -137,22 +160,9 @@ proxies:
     path: /?ed=2560
     headers:
       Host: sni.111000.dynv6.net
-- name: VLESS-WS-TLS-🇨🇦(CA)-www.gco.gov.qa
+- name: VLESS-WS-TLS-🇺🇸(US)-quick-edit.devprod.cloudflare.dev
   type: vless
-  server: www.gco.gov.qa
-  port: 2053
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.dynv6.net
-- name: VLESS-WS-TLS-🇺🇸(US)-www.aapanel.com
-  type: vless
-  server: www.aapanel.com
+  server: quick-edit.devprod.cloudflare.dev
   port: 2053
   uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
   network: ws
@@ -176,7 +186,20 @@ proxies:
     path: /?ed=2560
     headers:
       Host: sni.111000.dynv6.net
-- name: VLESS-WS-TLS-🇺🇸(US)-notion.site
+- name: VLESS-WS-TLS-🇺🇸(US)-208.103.161.32
+  type: vless
+  server: 208.103.161.32
+  port: 2053
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  network: ws
+  tls: true
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.dynv6.net
+- name: VLESS-WS-TLS-🇨🇦(CA)-notion.site
   type: vless
   server: notion.site
   port: 2053
@@ -202,58 +225,6 @@ proxies:
     path: /?ed=2560
     headers:
       Host: sni.111000.dynv6.net
-- name: VLESS-WS-TLS-🇺🇸(US)-quick-edit.devprod.cloudflare.dev
-  type: vless
-  server: quick-edit.devprod.cloudflare.dev
-  port: 2053
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.dynv6.net
-- name: VLESS-WS-TLS-🇨🇦(CA)-208.103.161.33
-  type: vless
-  server: 208.103.161.33
-  port: 2053
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: VLESS-WS-TLS-🇺🇸(US)-208.103.161.33
-  type: vless
-  server: 208.103.161.33
-  port: 2053
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
-    headers:
-      Host: sni.111000.dynv6.net
-- name: VLESS-WS-TLS-🇨🇦(CA)-208.103.161.33_1
-  type: vless
-  server: 208.103.161.33
-  port: 2053
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.dynv6.net
 - name: VLESS-TCP-REALITY-🇺🇸(US)-172.233.171.226
   type: vless
   server: 172.233.171.226
@@ -263,9 +234,9 @@ proxies:
   tls: true
   servername: yahoo.com
   client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇨🇦(CA)-docker.1panel.live
+- name: VLESS-WS-TLS-🇺🇸(US)-208.103.161.33_1
   type: vless
-  server: docker.1panel.live
+  server: 208.103.161.33
   port: 2053
   uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
   network: ws
@@ -276,20 +247,20 @@ proxies:
     path: /?ed=2560
     headers:
       Host: sni.111000.dynv6.net
-- name: VLESS-WS-TLS-🇺🇸(US)-www.gov.se
+- name: VLESS-WS-TLS-🇺🇸(US)-visa.com
   type: vless
-  server: www.gov.se
-  port: 2053
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  server: visa.com
+  port: 443
+  uuid: 495c0dad-3268-4470-ac57-887c5089db0d
   network: ws
   tls: true
-  servername: sni.111000.dynv6.net
+  servername: ziyong.boringdad.netlib.re
   client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: sni.111000.dynv6.net
-- name: VLESS-WS-TLS-🇺🇸(US)-www.visa.cn
+      Host: ziyong.boringdad.netlib.re
+- name: VLESS-WS-TLS-🇨🇦(CA)-www.visa.cn
   type: vless
   server: www.visa.cn
   port: 2053
@@ -302,19 +273,15 @@ proxies:
     path: /?ed=2560
     headers:
       Host: sni.111000.dynv6.net
-- name: VLESS-WS-TLS-🇩🇪(DE)-platform.wise.com
+- name: VLESS-XHTTP-REALITY-🇩🇪(DE)-germ.torprospeed.ir
   type: vless
-  server: platform.wise.com
-  port: 2053
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  network: ws
+  server: germ.torprospeed.ir
+  port: 8440
+  uuid: 2a2bbaaf-1a1b-480b-93aa-004da9635683
+  network: xhttp
   tls: true
-  servername: sni.111000.dynv6.net
+  servername: www.stackoverflow.com
   client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
 - name: VLESS-WS-TLS-🇬🇧(GB)-cosmin.ns.cloudflare.com
   type: vless
   server: cosmin.ns.cloudflare.com
@@ -328,15 +295,67 @@ proxies:
     path: /hdwvmtws
     headers:
       Host: 639013098070588901.macan-amsjd.info
-- name: VLESS-XHTTP-REALITY-🇩🇪(DE)-46.224.77.158
+- name: VLESS-WS-TLS-🇫🇷(FR)-platform.wise.com
   type: vless
-  server: 46.224.77.158
-  port: 57490
-  uuid: 3e61dd90-7d20-4592-9969-26a7e3af7c5d
-  network: xhttp
+  server: platform.wise.com
+  port: 2053
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  network: ws
   tls: true
-  servername: stackoverflow.com
+  servername: sni.111000.dynv6.net
   client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.dynv6.net
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-5.75.192.28
+  type: vless
+  server: 5.75.192.28
+  port: 2025
+  uuid: cd19d8ac-5cf2-4a4a-8e67-2f1ccd704d65
+  network: tcp
+  tls: true
+  servername: movivoolom.movementvip.ir
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-germ.torprospeed.ir
+  type: vless
+  server: germ.torprospeed.ir
+  port: 250
+  uuid: 2a2bbaaf-1a1b-480b-93aa-004da9635683
+  network: tcp
+  tls: true
+  servername: zhaket.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-german.torprospeed.ir
+  type: vless
+  server: german.torprospeed.ir
+  port: 250
+  uuid: 2a2bbaaf-1a1b-480b-93aa-004da9635683
+  network: tcp
+  tls: true
+  servername: www.zhaket.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-78.46.140.183
+  type: vless
+  server: 78.46.140.183
+  port: 39411
+  uuid: 7ff8a0c0-f106-4b33-b4cb-b5ca613b0874
+  network: tcp
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-147.45.234.51
+  type: vless
+  server: 147.45.234.51
+  port: 443
+  uuid: fd0718a1-c463-4297-8ba9-a7f4b93ce436
+  network: tcp
+  tls: true
+  servername: www.vk.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇳🇱(NL)-147.45.230.128
   type: vless
   server: 147.45.230.128
@@ -360,45 +379,9 @@ proxies:
     path: /sghiyws
     headers:
       Host: terazhedi.info
-- name: VLESS-TCP-REALITY-🇳🇱(NL)-147.45.234.51
+- name: VLESS-WS-TLS-🇩🇪(DE)-18.193.162.239
   type: vless
-  server: 147.45.234.51
-  port: 443
-  uuid: fd0718a1-c463-4297-8ba9-a7f4b93ce436
-  network: tcp
-  tls: true
-  servername: www.vk.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇩🇪(DE)-zula.ir
-  type: vless
-  server: zula.ir
-  port: 443
-  uuid: 1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63
-  network: ws
-  tls: true
-  servername: terazhedi.info
-  client-fingerprint: chrome
-  ws-opts:
-    path: /sghiyws
-    headers:
-      Host: terazhedi.info
-- name: VLESS-WS-TLS-🇩🇪(DE)-brenna.ns.cloudflare.com
-  type: vless
-  server: brenna.ns.cloudflare.com
-  port: 443
-  uuid: 1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63
-  network: ws
-  tls: true
-  servername: terazhedi.info
-  client-fingerprint: chrome
-  ws-opts:
-    path: /sghiyws
-    headers:
-      Host: terazhedi.info
-- name: VLESS-WS-TLS-🇩🇪(DE)-63.181.135.100
-  type: vless
-  server: 63.181.135.100
+  server: 18.193.162.239
   port: 22224
   uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
   network: ws
@@ -408,53 +391,7 @@ proxies:
   ws-opts:
     path: /telegram-channel-vlessconfig
     headers:
-      Host: 63.181.135.100
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-freeconfig.nimroo.org
-  type: vless
-  server: freeconfig.nimroo.org
-  port: 443
-  uuid: 9ceadcf2-47f0-4675-ae66-f7894289228a
-  network: tcp
-  tls: true
-  servername: tgju.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇫🇷(FR)-13.36.81.220
-  type: vless
-  server: 13.36.81.220
-  port: 22224
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  network: ws
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  ws-opts:
-    path: /telegram-channel-vlessconfig
-    headers:
-      Host: 13.36.81.220
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-freeconfig.nimroo.org_1
-  type: vless
-  server: freeconfig.nimroo.org
-  port: 443
-  uuid: 9ceadcf2-47f0-4675-ae66-f7894289228a
-  network: tcp
-  tls: true
-  servername: tgju.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇨🇦(CA)-ef87bb2b.meti-e9q.pages.dev
-  type: vless
-  server: ef87bb2b.meti-e9q.pages.dev
-  port: 443
-  uuid: 923509aa-bfb0-4758-a5a1-a6c2d0468169
-  network: ws
-  tls: true
-  servername: ef87bb2b.meti-e9q.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ck2vlelfdajoybac?ed=2560
-    headers:
-      Host: ef87bb2b.meti-e9q.pages.dev
+      Host: 18.193.162.239
 - name: VLESS-WS-TLS-🇩🇪(DE)-www.speedtest.net
   type: vless
   server: www.speedtest.net
@@ -468,6 +405,210 @@ proxies:
     path: /
     headers:
       Host: kalam.mrconfigur.site
+- name: VLESS-WS-TLS-🇩🇪(DE)-zula.ir
+  type: vless
+  server: zula.ir
+  port: 443
+  uuid: 1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63
+  network: ws
+  tls: true
+  servername: terazhedi.info
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sghiyws
+    headers:
+      Host: terazhedi.info
+- name: VLESS-WS-TLS-🇫🇷(FR)-13.36.81.220
+  type: vless
+  server: 13.36.81.220
+  port: 22224
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  network: ws
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  ws-opts:
+    path: /telegram-channel-vlessconfig
+    headers:
+      Host: 13.36.81.220
+- name: VLESS-WS-TLS-🇨🇦(CA)-ef87bb2b.meti-e9q.pages.dev
+  type: vless
+  server: ef87bb2b.meti-e9q.pages.dev
+  port: 443
+  uuid: 923509aa-bfb0-4758-a5a1-a6c2d0468169
+  network: ws
+  tls: true
+  servername: ef87bb2b.meti-e9q.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ck2vlelfdajoybac?ed=2560
+    headers:
+      Host: ef87bb2b.meti-e9q.pages.dev
+- name: VLESS-WS-TLS-🇩🇪(DE)-63.177.179.106
+  type: vless
+  server: 63.177.179.106
+  port: 22224
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  network: ws
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  ws-opts:
+    path: /telegram-channel-vlessconfig
+    headers:
+      Host: 63.177.179.106
+- name: VLESS-GRPC-REALITY-🇩🇪(DE)-daily_configs.revolution-time.sbs
+  type: vless
+  server: daily_configs.revolution-time.sbs
+  port: 443
+  uuid: Telegram--Daily_Configs--
+  network: grpc
+  tls: true
+  servername: tgju.org
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-freeconfig.nimroo.org
+  type: vless
+  server: freeconfig.nimroo.org
+  port: 443
+  uuid: 9ceadcf2-47f0-4675-ae66-f7894289228a
+  network: tcp
+  tls: true
+  servername: tgju.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-freeconfig.nimroo.org_1
+  type: vless
+  server: freeconfig.nimroo.org
+  port: 443
+  uuid: 9ceadcf2-47f0-4675-ae66-f7894289228a
+  network: tcp
+  tls: true
+  servername: tgju.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇫🇷(FR)-www.visa.com.br
+  type: vless
+  server: www.visa.com.br
+  port: 443
+  uuid: e0acdcf9-df32-45c6-95a6-17b0b6180de6
+  network: ws
+  tls: true
+  servername: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+- name: VLESS-TCP-REALITY-🇱🇻(LV)-185.176.220.154
+  type: vless
+  server: 185.176.220.154
+  port: 443
+  uuid: a0e804c3-55e2-4d51-82c7-33976d6748cb
+  network: tcp
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-germa.torprospeed.ir
+  type: vless
+  server: germa.torprospeed.ir
+  port: 250
+  uuid: 2a2bbaaf-1a1b-480b-93aa-004da9635683
+  network: tcp
+  tls: true
+  servername: www.zhaket.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇩🇪(DE)-brenna.ns.cloudflare.com
+  type: vless
+  server: brenna.ns.cloudflare.com
+  port: 443
+  uuid: 1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63
+  network: ws
+  tls: true
+  servername: terazhedi.info
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sghiyws
+    headers:
+      Host: terazhedi.info
+- name: VLESS-TCP-REALITY-🇫🇮(FI)-finland.torprospeed.ir
+  type: vless
+  server: finland.torprospeed.ir
+  port: 250
+  uuid: 2a2bbaaf-1a1b-480b-93aa-004da9635683
+  network: tcp
+  tls: true
+  servername: zhaket.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🌐(XX)-91.107.143.41
+  type: vless
+  server: 91.107.143.41
+  port: 443
+  uuid: 383c9651-cecb-45b4-8df8-2eb85057848d
+  network: ws
+  tls: true
+  servername: ognbqqfj1a49.greendop.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /09hmyzvdljYpebWBPqDV7
+    headers:
+      Host: ognbqqfj1a49.greendop.com
+- name: VLESS-TCP-REALITY-🇫🇷(FR)-46.62.229.93
+  type: vless
+  server: 46.62.229.93
+  port: 5678
+  uuid: bc66129c-bb06-0dac-a7fc-3d35b38f87e5
+  network: tcp
+  tls: true
+  servername: refersion.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-www.aapanel.com
+  type: vless
+  server: www.aapanel.com
+  port: 2053
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  network: ws
+  tls: true
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.dynv6.net
+- name: VLESS-XHTTP-REALITY-🇩🇪(DE)-46.224.77.158
+  type: vless
+  server: 46.224.77.158
+  port: 57490
+  uuid: 3e61dd90-7d20-4592-9969-26a7e3af7c5d
+  network: xhttp
+  tls: true
+  servername: stackoverflow.com
+  client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇺🇸(US)-188.114.96.11
+  type: vless
+  server: 188.114.96.11
+  port: 2087
+  uuid: b9b8cf4c-29a3-4288-9c6c-8811dc37beec
+  network: ws
+  tls: true
+  servername: xLZ767v2Ray.PAgEs.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /5z5wdmesbon0p3kk?ed=2560
+    headers:
+      Host: xLZ767v2Ray.PAgEs.dev
+- name: VLESS-TCP-REALITY-🇵🇱(PL)-poland.geodema.network
+  type: vless
+  server: poland.geodema.network
+  port: 8443
+  uuid: eb7c7631-6c7c-4f34-a65a-974b4565d01d
+  network: tcp
+  tls: true
+  servername: music.yandex.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: VLESS-WS-TLS-🇺🇸(US)-188.114.97.11
   type: vless
   server: 188.114.97.11
@@ -481,68 +622,16 @@ proxies:
     path: /t3fgslbvys9sp8zt?ed=2560
     headers:
       Host: XLZ767V2RAy.PAGES.dEv
-- name: VLESS-TCP-REALITY-🇪🇸(ES)-tunnyl.ru
+- name: VLESS-TCP-REALITY-🇹🇷(TR)-31.57.225.233
   type: vless
-  server: tunnyl.ru
-  port: 8443
-  uuid: 10c5cbd0-397a-4a65-b86b-3d63562580d9
+  server: 31.57.225.233
+  port: 443
+  uuid: a0e804c3-55e2-4d51-82c7-33976d6748cb
   network: tcp
   tls: true
   servername: google.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-80.90.186.91
-  type: vless
-  server: 80.90.186.91
-  port: 4443
-  uuid: edb3d24d-1a55-42f7-8752-6ae216f18cf4
-  network: tcp
-  tls: true
-  servername: github.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇫🇮(FI)-217.16.24.170
-  type: vless
-  server: 217.16.24.170
-  port: 8443
-  uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
-  network: tcp
-  tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-172.66.45.18
-  type: vless
-  server: 172.66.45.18
-  port: 443
-  uuid: 923509aa-bfb0-4758-a5a1-a6c2d0468169
-  network: ws
-  tls: true
-  servername: ef87bb2b.meti-e9q.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ck2vlelfdajoybac?ed=2560
-    headers:
-      Host: ef87bb2b.meti-e9q.pages.dev
-- name: VLESS-TCP-REALITY-🌐(XX)-62.60.237.26
-  type: vless
-  server: 62.60.237.26
-  port: 443
-  uuid: c2e196d4-3453-4c6c-bb80-fe372801e1a0
-  network: tcp
-  tls: true
-  servername: st.ozone.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-GRPC-REALITY-🇫🇮(FI)-hy6awiaa3c2e.dopweed.com
-  type: vless
-  server: hy6awiaa3c2e.dopweed.com
-  port: 2053
-  uuid: 5663aabc-342e-48f6-8761-c78fa1138df6
-  network: grpc
-  tls: true
-  servername: tgju.org
-  client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-VLESS
   type: url-test
@@ -550,47 +639,56 @@ proxy-groups:
   - VLESS-TCP-REALITY-🇺🇸(US)-139.144.199.41
   - VLESS-GRPC-TLS-🇺🇸(US)-3.143.235.221
   - VLESS-WS-TLS-🇨🇦(CA)-148.113.207.224
-  - VLESS-WS-TLS-🇺🇸(US)-shops.myshopify.com
+  - VLESS-WS-TLS-🇺🇸(US)-docker.1panel.live
   - VLESS-WS-TLS-🇺🇸(US)-pages.cloudflare.com
-  - VLESS-WS-TLS-🇨🇦(CA)-104.24.196.20
-  - VLESS-WS-TLS-🇺🇸(US)-visa.com
   - VLESS-WS-TLS-🇨🇦(CA)-cdnjs.com
-  - VLESS-WS-TLS-🇨🇦(CA)-cdnjs.com_1
-  - VLESS-WS-TLS-🇨🇦(CA)-208.103.161.32
-  - VLESS-WS-TLS-🇨🇦(CA)-www.gco.gov.qa
-  - VLESS-WS-TLS-🇺🇸(US)-www.aapanel.com
-  - VLESS-WS-TLS-🇺🇸(US)-convera.com
-  - VLESS-WS-TLS-🇺🇸(US)-notion.site
-  - VLESS-WS-TLS-🇺🇸(US)-www.garuda-indonesia.com
-  - VLESS-WS-TLS-🇺🇸(US)-quick-edit.devprod.cloudflare.dev
-  - VLESS-WS-TLS-🇨🇦(CA)-208.103.161.33
-  - VLESS-WS-TLS-🇺🇸(US)-208.103.161.33
-  - VLESS-WS-TLS-🇨🇦(CA)-208.103.161.33_1
-  - VLESS-TCP-REALITY-🇺🇸(US)-172.233.171.226
-  - VLESS-WS-TLS-🇨🇦(CA)-docker.1panel.live
   - VLESS-WS-TLS-🇺🇸(US)-www.gov.se
-  - VLESS-WS-TLS-🇺🇸(US)-www.visa.cn
-  - VLESS-WS-TLS-🇩🇪(DE)-platform.wise.com
+  - VLESS-WS-TLS-🇺🇸(US)-www.gco.gov.qa
+  - VLESS-WS-TLS-🇨🇦(CA)-cdnjs.com_1
+  - VLESS-WS-TLS-🇺🇸(US)-208.103.161.33
+  - VLESS-TCP-REALITY-🇺🇸(US)-77.110.119.225
+  - VLESS-WS-TLS-🇺🇸(US)-shops.myshopify.com
+  - VLESS-WS-TLS-🇺🇸(US)-quick-edit.devprod.cloudflare.dev
+  - VLESS-WS-TLS-🇺🇸(US)-convera.com
+  - VLESS-WS-TLS-🇺🇸(US)-208.103.161.32
+  - VLESS-WS-TLS-🇨🇦(CA)-notion.site
+  - VLESS-WS-TLS-🇺🇸(US)-www.garuda-indonesia.com
+  - VLESS-TCP-REALITY-🇺🇸(US)-172.233.171.226
+  - VLESS-WS-TLS-🇺🇸(US)-208.103.161.33_1
+  - VLESS-WS-TLS-🇺🇸(US)-visa.com
+  - VLESS-WS-TLS-🇨🇦(CA)-www.visa.cn
+  - VLESS-XHTTP-REALITY-🇩🇪(DE)-germ.torprospeed.ir
   - VLESS-WS-TLS-🇬🇧(GB)-cosmin.ns.cloudflare.com
-  - VLESS-XHTTP-REALITY-🇩🇪(DE)-46.224.77.158
+  - VLESS-WS-TLS-🇫🇷(FR)-platform.wise.com
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.192.28
+  - VLESS-TCP-REALITY-🇩🇪(DE)-germ.torprospeed.ir
+  - VLESS-TCP-REALITY-🇩🇪(DE)-german.torprospeed.ir
+  - VLESS-TCP-REALITY-🇩🇪(DE)-78.46.140.183
+  - VLESS-TCP-REALITY-🇳🇱(NL)-147.45.234.51
   - VLESS-TCP-REALITY-🇳🇱(NL)-147.45.230.128
   - VLESS-WS-TLS-🇩🇪(DE)-108.162.194.176
-  - VLESS-TCP-REALITY-🇳🇱(NL)-147.45.234.51
-  - VLESS-WS-TLS-🇩🇪(DE)-zula.ir
-  - VLESS-WS-TLS-🇩🇪(DE)-brenna.ns.cloudflare.com
-  - VLESS-WS-TLS-🇩🇪(DE)-63.181.135.100
-  - VLESS-TCP-REALITY-🇩🇪(DE)-freeconfig.nimroo.org
-  - VLESS-WS-TLS-🇫🇷(FR)-13.36.81.220
-  - VLESS-TCP-REALITY-🇩🇪(DE)-freeconfig.nimroo.org_1
-  - VLESS-WS-TLS-🇨🇦(CA)-ef87bb2b.meti-e9q.pages.dev
+  - VLESS-WS-TLS-🇩🇪(DE)-18.193.162.239
   - VLESS-WS-TLS-🇩🇪(DE)-www.speedtest.net
+  - VLESS-WS-TLS-🇩🇪(DE)-zula.ir
+  - VLESS-WS-TLS-🇫🇷(FR)-13.36.81.220
+  - VLESS-WS-TLS-🇨🇦(CA)-ef87bb2b.meti-e9q.pages.dev
+  - VLESS-WS-TLS-🇩🇪(DE)-63.177.179.106
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-daily_configs.revolution-time.sbs
+  - VLESS-TCP-REALITY-🇩🇪(DE)-freeconfig.nimroo.org
+  - VLESS-TCP-REALITY-🇩🇪(DE)-freeconfig.nimroo.org_1
+  - VLESS-WS-TLS-🇫🇷(FR)-www.visa.com.br
+  - VLESS-TCP-REALITY-🇱🇻(LV)-185.176.220.154
+  - VLESS-TCP-REALITY-🇩🇪(DE)-germa.torprospeed.ir
+  - VLESS-WS-TLS-🇩🇪(DE)-brenna.ns.cloudflare.com
+  - VLESS-TCP-REALITY-🇫🇮(FI)-finland.torprospeed.ir
+  - VLESS-WS-TLS-🌐(XX)-91.107.143.41
+  - VLESS-TCP-REALITY-🇫🇷(FR)-46.62.229.93
+  - VLESS-WS-TLS-🇺🇸(US)-www.aapanel.com
+  - VLESS-XHTTP-REALITY-🇩🇪(DE)-46.224.77.158
+  - VLESS-WS-TLS-🇺🇸(US)-188.114.96.11
+  - VLESS-TCP-REALITY-🇵🇱(PL)-poland.geodema.network
   - VLESS-WS-TLS-🇺🇸(US)-188.114.97.11
-  - VLESS-TCP-REALITY-🇪🇸(ES)-tunnyl.ru
-  - VLESS-TCP-REALITY-🇷🇺(RU)-80.90.186.91
-  - VLESS-TCP-REALITY-🇫🇮(FI)-217.16.24.170
-  - VLESS-WS-TLS-🇺🇸(US)-172.66.45.18
-  - VLESS-TCP-REALITY-🌐(XX)-62.60.237.26
-  - VLESS-GRPC-REALITY-🇫🇮(FI)-hy6awiaa3c2e.dopweed.com
+  - VLESS-TCP-REALITY-🇹🇷(TR)-31.57.225.233
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -610,47 +708,56 @@ proxy-groups:
   - VLESS-TCP-REALITY-🇺🇸(US)-139.144.199.41
   - VLESS-GRPC-TLS-🇺🇸(US)-3.143.235.221
   - VLESS-WS-TLS-🇨🇦(CA)-148.113.207.224
-  - VLESS-WS-TLS-🇺🇸(US)-shops.myshopify.com
+  - VLESS-WS-TLS-🇺🇸(US)-docker.1panel.live
   - VLESS-WS-TLS-🇺🇸(US)-pages.cloudflare.com
-  - VLESS-WS-TLS-🇨🇦(CA)-104.24.196.20
-  - VLESS-WS-TLS-🇺🇸(US)-visa.com
   - VLESS-WS-TLS-🇨🇦(CA)-cdnjs.com
-  - VLESS-WS-TLS-🇨🇦(CA)-cdnjs.com_1
-  - VLESS-WS-TLS-🇨🇦(CA)-208.103.161.32
-  - VLESS-WS-TLS-🇨🇦(CA)-www.gco.gov.qa
-  - VLESS-WS-TLS-🇺🇸(US)-www.aapanel.com
-  - VLESS-WS-TLS-🇺🇸(US)-convera.com
-  - VLESS-WS-TLS-🇺🇸(US)-notion.site
-  - VLESS-WS-TLS-🇺🇸(US)-www.garuda-indonesia.com
-  - VLESS-WS-TLS-🇺🇸(US)-quick-edit.devprod.cloudflare.dev
-  - VLESS-WS-TLS-🇨🇦(CA)-208.103.161.33
-  - VLESS-WS-TLS-🇺🇸(US)-208.103.161.33
-  - VLESS-WS-TLS-🇨🇦(CA)-208.103.161.33_1
-  - VLESS-TCP-REALITY-🇺🇸(US)-172.233.171.226
-  - VLESS-WS-TLS-🇨🇦(CA)-docker.1panel.live
   - VLESS-WS-TLS-🇺🇸(US)-www.gov.se
-  - VLESS-WS-TLS-🇺🇸(US)-www.visa.cn
-  - VLESS-WS-TLS-🇩🇪(DE)-platform.wise.com
+  - VLESS-WS-TLS-🇺🇸(US)-www.gco.gov.qa
+  - VLESS-WS-TLS-🇨🇦(CA)-cdnjs.com_1
+  - VLESS-WS-TLS-🇺🇸(US)-208.103.161.33
+  - VLESS-TCP-REALITY-🇺🇸(US)-77.110.119.225
+  - VLESS-WS-TLS-🇺🇸(US)-shops.myshopify.com
+  - VLESS-WS-TLS-🇺🇸(US)-quick-edit.devprod.cloudflare.dev
+  - VLESS-WS-TLS-🇺🇸(US)-convera.com
+  - VLESS-WS-TLS-🇺🇸(US)-208.103.161.32
+  - VLESS-WS-TLS-🇨🇦(CA)-notion.site
+  - VLESS-WS-TLS-🇺🇸(US)-www.garuda-indonesia.com
+  - VLESS-TCP-REALITY-🇺🇸(US)-172.233.171.226
+  - VLESS-WS-TLS-🇺🇸(US)-208.103.161.33_1
+  - VLESS-WS-TLS-🇺🇸(US)-visa.com
+  - VLESS-WS-TLS-🇨🇦(CA)-www.visa.cn
+  - VLESS-XHTTP-REALITY-🇩🇪(DE)-germ.torprospeed.ir
   - VLESS-WS-TLS-🇬🇧(GB)-cosmin.ns.cloudflare.com
-  - VLESS-XHTTP-REALITY-🇩🇪(DE)-46.224.77.158
+  - VLESS-WS-TLS-🇫🇷(FR)-platform.wise.com
+  - VLESS-TCP-REALITY-🇩🇪(DE)-5.75.192.28
+  - VLESS-TCP-REALITY-🇩🇪(DE)-germ.torprospeed.ir
+  - VLESS-TCP-REALITY-🇩🇪(DE)-german.torprospeed.ir
+  - VLESS-TCP-REALITY-🇩🇪(DE)-78.46.140.183
+  - VLESS-TCP-REALITY-🇳🇱(NL)-147.45.234.51
   - VLESS-TCP-REALITY-🇳🇱(NL)-147.45.230.128
   - VLESS-WS-TLS-🇩🇪(DE)-108.162.194.176
-  - VLESS-TCP-REALITY-🇳🇱(NL)-147.45.234.51
-  - VLESS-WS-TLS-🇩🇪(DE)-zula.ir
-  - VLESS-WS-TLS-🇩🇪(DE)-brenna.ns.cloudflare.com
-  - VLESS-WS-TLS-🇩🇪(DE)-63.181.135.100
-  - VLESS-TCP-REALITY-🇩🇪(DE)-freeconfig.nimroo.org
-  - VLESS-WS-TLS-🇫🇷(FR)-13.36.81.220
-  - VLESS-TCP-REALITY-🇩🇪(DE)-freeconfig.nimroo.org_1
-  - VLESS-WS-TLS-🇨🇦(CA)-ef87bb2b.meti-e9q.pages.dev
+  - VLESS-WS-TLS-🇩🇪(DE)-18.193.162.239
   - VLESS-WS-TLS-🇩🇪(DE)-www.speedtest.net
+  - VLESS-WS-TLS-🇩🇪(DE)-zula.ir
+  - VLESS-WS-TLS-🇫🇷(FR)-13.36.81.220
+  - VLESS-WS-TLS-🇨🇦(CA)-ef87bb2b.meti-e9q.pages.dev
+  - VLESS-WS-TLS-🇩🇪(DE)-63.177.179.106
+  - VLESS-GRPC-REALITY-🇩🇪(DE)-daily_configs.revolution-time.sbs
+  - VLESS-TCP-REALITY-🇩🇪(DE)-freeconfig.nimroo.org
+  - VLESS-TCP-REALITY-🇩🇪(DE)-freeconfig.nimroo.org_1
+  - VLESS-WS-TLS-🇫🇷(FR)-www.visa.com.br
+  - VLESS-TCP-REALITY-🇱🇻(LV)-185.176.220.154
+  - VLESS-TCP-REALITY-🇩🇪(DE)-germa.torprospeed.ir
+  - VLESS-WS-TLS-🇩🇪(DE)-brenna.ns.cloudflare.com
+  - VLESS-TCP-REALITY-🇫🇮(FI)-finland.torprospeed.ir
+  - VLESS-WS-TLS-🌐(XX)-91.107.143.41
+  - VLESS-TCP-REALITY-🇫🇷(FR)-46.62.229.93
+  - VLESS-WS-TLS-🇺🇸(US)-www.aapanel.com
+  - VLESS-XHTTP-REALITY-🇩🇪(DE)-46.224.77.158
+  - VLESS-WS-TLS-🇺🇸(US)-188.114.96.11
+  - VLESS-TCP-REALITY-🇵🇱(PL)-poland.geodema.network
   - VLESS-WS-TLS-🇺🇸(US)-188.114.97.11
-  - VLESS-TCP-REALITY-🇪🇸(ES)-tunnyl.ru
-  - VLESS-TCP-REALITY-🇷🇺(RU)-80.90.186.91
-  - VLESS-TCP-REALITY-🇫🇮(FI)-217.16.24.170
-  - VLESS-WS-TLS-🇺🇸(US)-172.66.45.18
-  - VLESS-TCP-REALITY-🌐(XX)-62.60.237.26
-  - VLESS-GRPC-REALITY-🇫🇮(FI)-hy6awiaa3c2e.dopweed.com
+  - VLESS-TCP-REALITY-🇹🇷(TR)-31.57.225.233
 rule-providers:
   adblock:
     type: http
