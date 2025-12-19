@@ -20,39 +20,25 @@ proxies:
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
-- name: SS-A256GCM-🇸🇬(SG)-103.248.229.90
-  type: ss
-  server: 103.248.229.90
-  port: 35817
-  cipher: aes-256-gcm
-  password: 4VqrUWV7hm
-- name: SS-A256GCM-🇸🇬(SG)-103.248.229.90_1
-  type: ss
-  server: 103.248.229.90
-  port: 40413
-  cipher: aes-256-gcm
-  password: hGpFS8dtyN
-- name: SS-A256GCM-🇸🇬(SG)-103.248.229.90_2
-  type: ss
-  server: 103.248.229.90
-  port: 24203
-  cipher: aes-256-gcm
-  password: 1GJth1Qjic
 - name: SS-C20P-🇦🇺(AU)-45.15.185.70
   type: ss
   server: 45.15.185.70
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: SS-A256GCM-🇰🇷(KR)-141.164.45.187
+  type: ss
+  server: 141.164.45.187
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-A256GCM-🇸🇬(SG)-103.248.229.90
-  - SS-A256GCM-🇸🇬(SG)-103.248.229.90_1
-  - SS-A256GCM-🇸🇬(SG)-103.248.229.90_2
   - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -70,10 +56,8 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-A256GCM-🇸🇬(SG)-103.248.229.90
-  - SS-A256GCM-🇸🇬(SG)-103.248.229.90_1
-  - SS-A256GCM-🇸🇬(SG)-103.248.229.90_2
   - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-A256GCM-🇰🇷(KR)-141.164.45.187
 rule-providers:
   adblock:
     type: http
