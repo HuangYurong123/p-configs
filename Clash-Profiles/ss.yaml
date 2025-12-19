@@ -14,18 +14,18 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇫🇮(FI)-65.21.243.22
+- name: SS-C20P-🇺🇸(US)-92.118.112.101
   type: ss
-  server: 65.21.243.22
-  port: 31348
+  server: 92.118.112.101
+  port: 9483
   cipher: chacha20-ietf-poly1305
-  password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
-- name: SS-C20P-🇦🇺(AU)-45.15.185.70
+  password: KDhMDFpgoKrHuIAPQP1egn
+- name: SS-C20P-🇩🇪(DE)-62.133.60.60
   type: ss
-  server: 45.15.185.70
-  port: 990
+  server: 62.133.60.60
+  port: 7048
   cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  password: 3aW0olBthRkbroWm2lNQfx
 - name: SS-A256GCM-🇰🇷(KR)-141.164.45.187
   type: ss
   server: 141.164.45.187
@@ -36,8 +36,8 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-C20P-🇺🇸(US)-92.118.112.101
+  - SS-C20P-🇩🇪(DE)-62.133.60.60
   - SS-A256GCM-🇰🇷(KR)-141.164.45.187
   tolerance: 50
   lazy: false
@@ -55,8 +55,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-C20P-🇺🇸(US)-92.118.112.101
+  - SS-C20P-🇩🇪(DE)-62.133.60.60
   - SS-A256GCM-🇰🇷(KR)-141.164.45.187
 rule-providers:
   adblock:
