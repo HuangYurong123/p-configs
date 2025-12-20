@@ -28,7 +28,7 @@ REQUEST_SOCKET_TIMEOUT_SECONDS = 5
 STARTUP_WAIT_SECONDS = 5.0
 
 # --- IPv6 Test Settings ---
-IPV6_TEST_URL = "http://wifi.vivo.com.cn/generate_204"
+IPV6_TEST_URL = "http://www.google.com/generate_204"
 IPV6_TIMEOUT_SECONDS = 3
 
 # --- Geo & Naming ---
