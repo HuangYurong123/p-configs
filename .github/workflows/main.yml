@@ -48,6 +48,19 @@ jobs:
         working-directory: ./Files
         run: python3 create_base64_lists.py
 
+
+
+        
+
+
+      - name: Merge all subscriptions into single file
+        working-directory: ./Splitted-By-Protocol-Base64
+        run: cat *.txt > all_subscriptions.txt
+
+
+
+        
+
       - name: Generate Clash Meta profile
         working-directory: ./Files
         run: python3 generate_clash_profile.py
