@@ -14,9 +14,9 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.176
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.149
   type: vless
-  server: 15.204.97.176
+  server: 15.204.97.149
   port: 23576
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   network: tcp
@@ -24,9 +24,9 @@ proxies:
   servername: fuck.rkn
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
   type: vless
-  server: 15.204.97.214
+  server: 15.204.97.198
   port: 23576
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   network: tcp
@@ -54,6 +54,39 @@ proxies:
   servername: fuck.rkn
   client-fingerprint: chrome
   flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.175
+  type: vless
+  server: 15.204.97.175
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇺🇸(US)-172.66.45.18
+  type: vless
+  server: 172.66.45.18
+  port: 443
+  uuid: 923509aa-bfb0-4758-a5a1-a6c2d0468169
+  network: ws
+  tls: true
+  servername: ef87bb2b.meti-e9q.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ck2vlelfdajoybac?ed=2560
+    headers:
+      Host: ef87bb2b.meti-e9q.pages.dev
+- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
+  type: vless
+  server: 15.204.97.214
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 - name: VLESS-WS-TLS-🇺🇸(US)-162.159.2.134
   type: vless
   server: 162.159.2.134
@@ -67,26 +100,18 @@ proxies:
     path: /
     headers:
       Host: ww.x-aniu---tw.netlib.re
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.175
-  type: vless
-  server: 15.204.97.175
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: ⚡ Auto-Select-VLESS
   type: url-test
   proxies: &id001
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.176
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.149
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.169
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.168
-  - VLESS-WS-TLS-🇺🇸(US)-162.159.2.134
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.175
+  - VLESS-WS-TLS-🇺🇸(US)-172.66.45.18
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
+  - VLESS-WS-TLS-🇺🇸(US)-162.159.2.134
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -103,12 +128,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VLESS
   - 🔗 Auto-Failover-VLESS
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.176
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.149
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.169
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.168
-  - VLESS-WS-TLS-🇺🇸(US)-162.159.2.134
   - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.175
+  - VLESS-WS-TLS-🇺🇸(US)-172.66.45.18
+  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
+  - VLESS-WS-TLS-🇺🇸(US)-162.159.2.134
 rule-providers:
   adblock:
     type: http
