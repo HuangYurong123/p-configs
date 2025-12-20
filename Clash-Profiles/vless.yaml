@@ -14,56 +14,19 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.149
+- name: VLESS-WS-TLS-🇳🇱(NL)-www.speedtest.net
   type: vless
-  server: 15.204.97.149
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
+  server: www.speedtest.net
+  port: 443
+  uuid: telegram-id-Arfilter
+  network: ws
   tls: true
-  servername: fuck.rkn
+  servername: ww.arfilter2.blog
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
-  type: vless
-  server: 15.204.97.198
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.169
-  type: vless
-  server: 15.204.97.169
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.168
-  type: vless
-  server: 15.204.97.168
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.175
-  type: vless
-  server: 15.204.97.175
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  ws-opts:
+    path: /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048
+    headers:
+      Host: ww.arfilter2.blog
 - name: VLESS-WS-TLS-🇺🇸(US)-172.66.45.18
   type: vless
   server: 172.66.45.18
@@ -77,41 +40,12 @@ proxies:
     path: /ck2vlelfdajoybac?ed=2560
     headers:
       Host: ef87bb2b.meti-e9q.pages.dev
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
-  type: vless
-  server: 15.204.97.214
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-162.159.2.134
-  type: vless
-  server: 162.159.2.134
-  port: 2087
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  network: ws
-  tls: true
-  servername: ww.x-aniu---tw.netlib.re
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ww.x-aniu---tw.netlib.re
 proxy-groups:
 - name: ⚡ Auto-Select-VLESS
   type: url-test
   proxies: &id001
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.149
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.169
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.168
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.175
+  - VLESS-WS-TLS-🇳🇱(NL)-www.speedtest.net
   - VLESS-WS-TLS-🇺🇸(US)-172.66.45.18
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
-  - VLESS-WS-TLS-🇺🇸(US)-162.159.2.134
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -128,14 +62,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VLESS
   - 🔗 Auto-Failover-VLESS
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.149
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.169
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.168
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.175
+  - VLESS-WS-TLS-🇳🇱(NL)-www.speedtest.net
   - VLESS-WS-TLS-🇺🇸(US)-172.66.45.18
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
-  - VLESS-WS-TLS-🇺🇸(US)-162.159.2.134
 rule-providers:
   adblock:
     type: http
