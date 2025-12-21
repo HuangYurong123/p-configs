@@ -19,7 +19,7 @@ PROTOCOLS_TO_TEST = ["vless.txt", "vmess.txt", "trojan.txt", "ss.txt", "hy2.txt"
 # --- Performance & Speed Test Settings ---
 MAX_WORKERS = 100
 BASE_SOCKS_PORT = 10800
-SPEED_THRESHOLD_MBPS = 25
+SPEED_THRESHOLD_MBPS = 20
 TEST_FILE_URL = "https://speed.cloudflare.com/__down?bytes=10000000"  # 10MB
 
 # --- Timeouts ---
@@ -27,8 +27,8 @@ MAX_TEST_DURATION_SECONDS = 5
 REQUEST_SOCKET_TIMEOUT_SECONDS = 5
 STARTUP_WAIT_SECONDS = 5.0
 
-# --- IPv6 Test Settings ---
-IPV6_TEST_URL = "https://ipv6.google.com/generate_204"
+# --- Google 连通性 Test Settings ---
+IPV6_TEST_URL = "http://connectivitycheck.gstatic.com/generate_204"
 IPV6_TIMEOUT_SECONDS = 3
 
 # --- Geo & Naming ---
@@ -147,7 +147,7 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
                         proxies=proxies,
                         timeout=3
                     )
-                    if resp.status_code < 200:  # 2xx, 3xx, 4xx都算连通（4xx至少连接到了服务器）
+                    if resp.status_code < 150:  # 2xx, 3xx, 4xx都算连通（4xx至少连接到了服务器）
                         china_connected = True
                         break
                 except requests.exceptions.RequestException:
