@@ -133,7 +133,7 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
             china_test_urls = [
                 "https://aliyunping.oss-cn-shenzhen.aliyuncs.com"
                 "https://aliyunping.oss-cn-hangzhou.aliyuncs.com"
-                "http://connect.rom.miui.com/generate_204",
+
 
             ]
             
