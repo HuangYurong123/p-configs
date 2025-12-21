@@ -14,139 +14,56 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.175
+- name: VLESS-TCP-TLS-🇳🇱(NL)-ams1.fromblancwithlove.com
   type: vless
-  server: 15.204.97.175
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
-  type: vless
-  server: 15.204.97.214
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.176
-  type: vless
-  server: 15.204.97.176
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇳🇱(NL)-www.speedtest.net
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: telegram-id-Arfilter
-  network: ws
-  tls: true
-  servername: ww.arfilter2.blog
-  client-fingerprint: chrome
-  ws-opts:
-    path: /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048
-    headers:
-      Host: ww.arfilter2.blog
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
-  type: vless
-  server: 15.204.97.198
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.169
-  type: vless
-  server: 15.204.97.169
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: VLESS-TCP-TLS-🇳🇱(NL)-89.187.174.121
-  type: vless
-  server: 89.187.174.121
+  server: ams1.fromblancwithlove.com
   port: 8443
   uuid: a207569d-bf8f-43dd-81fd-2c847c7870c4
   network: tcp
   tls: true
   servername: ams1.fromblancwithlove.com
   client-fingerprint: chrome
-- name: VLESS-TCP-REALITY-🇩🇪(DE)-deusup.dashping1.ir
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-57.129.53.182
   type: vless
-  server: deusup.dashping1.ir
-  port: 8101
-  uuid: 7138a76f-452b-4d23-83e2-faed94efdb10
+  server: 57.129.53.182
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   network: tcp
   tls: true
-  servername: preview.redd.it
+  servername: fuck.rkn
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-162.159.2.134
+- name: VLESS-WS-TLS-🇵🇱(PL)-173.245.59.217
   type: vless
-  server: 162.159.2.134
-  port: 2087
-  uuid: e258977b-e413-4718-a3af-02d75492c349
+  server: 173.245.59.217
+  port: 443
+  uuid: ee122f13-9b54-49b6-abc5-aa47b464fdb3
   network: ws
   tls: true
-  servername: ww.x-aniu---tw.netlib.re
+  servername: azizoarjmand.info
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /yhowcws
     headers:
-      Host: ww.x-aniu---tw.netlib.re
-- name: VLESS-TCP-REALITY-🌐(XX)-45.82.246.114
+      Host: azizoarjmand.info
+- name: VLESS-TCP-REALITY-🇩🇪(DE)-noda1.mcqueenconnection.ru
   type: vless
-  server: 45.82.246.114
-  port: 4443
-  uuid: 0a587061-6ccb-407c-86b8-c7d78b6bee5e
+  server: noda1.mcqueenconnection.ru
+  port: 443
+  uuid: 8f631f3f-5854-4d77-961a-ad33e10e29bb
   network: tcp
   tls: true
-  servername: github.com
+  servername: noda1.mcqueenconnection.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🌐(XX)-ovhwuxian.pai50288.uk
-  type: vless
-  server: ovhwuxian.pai50288.uk
-  port: 8443
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-  network: ws
-  tls: true
-  servername: ovhwuxian.pai50288.uk
-  client-fingerprint: chrome
-  ws-opts:
-    path: /57ba2ab1
-    headers:
-      Host: ovhwuxian.pai50288.uk
 proxy-groups:
 - name: ⚡ Auto-Select-VLESS
   type: url-test
   proxies: &id001
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.175
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.176
-  - VLESS-WS-TLS-🇳🇱(NL)-www.speedtest.net
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.169
-  - VLESS-TCP-TLS-🇳🇱(NL)-89.187.174.121
-  - VLESS-TCP-REALITY-🇩🇪(DE)-deusup.dashping1.ir
-  - VLESS-WS-TLS-🇺🇸(US)-162.159.2.134
-  - VLESS-TCP-REALITY-🌐(XX)-45.82.246.114
-  - VLESS-WS-TLS-🌐(XX)-ovhwuxian.pai50288.uk
+  - VLESS-TCP-TLS-🇳🇱(NL)-ams1.fromblancwithlove.com
+  - VLESS-TCP-REALITY-🇩🇪(DE)-57.129.53.182
+  - VLESS-WS-TLS-🇵🇱(PL)-173.245.59.217
+  - VLESS-TCP-REALITY-🇩🇪(DE)-noda1.mcqueenconnection.ru
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -163,17 +80,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VLESS
   - 🔗 Auto-Failover-VLESS
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.175
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.214
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.176
-  - VLESS-WS-TLS-🇳🇱(NL)-www.speedtest.net
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.198
-  - VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.169
-  - VLESS-TCP-TLS-🇳🇱(NL)-89.187.174.121
-  - VLESS-TCP-REALITY-🇩🇪(DE)-deusup.dashping1.ir
-  - VLESS-WS-TLS-🇺🇸(US)-162.159.2.134
-  - VLESS-TCP-REALITY-🌐(XX)-45.82.246.114
-  - VLESS-WS-TLS-🌐(XX)-ovhwuxian.pai50288.uk
+  - VLESS-TCP-TLS-🇳🇱(NL)-ams1.fromblancwithlove.com
+  - VLESS-TCP-REALITY-🇩🇪(DE)-57.129.53.182
+  - VLESS-WS-TLS-🇵🇱(PL)-173.245.59.217
+  - VLESS-TCP-REALITY-🇩🇪(DE)-noda1.mcqueenconnection.ru
 rule-providers:
   adblock:
     type: http
