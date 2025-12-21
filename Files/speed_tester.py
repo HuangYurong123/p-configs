@@ -131,7 +131,7 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
             # --- 增加中国连通性检测 ---
             # 模拟访问百度，如果3秒打不开，说明国内连通性极差
         try:
-        requests.get("http://connect.rom.miui.com/generate_204",headers={"User-Agent": "Mozilla/5.0"},proxies=proxies,timeout=3)
+            requests.get("http://connect.rom.miui.com/generate_204",headers={"User-Agent": "Mozilla/5.0"},proxies=proxies,timeout=3)
         except requests.exceptions.RequestException:
             return {"status": "China Unreachable", "speed": 0, "proxy": proxy}
 
