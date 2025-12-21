@@ -104,6 +104,7 @@ def create_v2ray_config(proxy: Proxy, local_socks_port: int, task_id: int) -> Op
     with open(config_path, 'w') as f: json.dump(config, f)
     return config_path
 
+
 # --- Worker Functions ---
 def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
     local_socks_port = BASE_SOCKS_PORT + task_id
@@ -124,6 +125,25 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
         ipv6_supported = test_ipv6_connectivity(proxies)
         if not ipv6_supported:
             return {"status": "No IPv6", "speed": 0, "proxy": proxy}
+
+
+    
+            # --- 增加中国连通性检测 ---
+    try:
+    # 模拟访问百度，如果3秒打不开，说明国内连通性极差
+            requests.get("http://connect.rom.miui.com/generate_204", 
+            headers={"User-Agent": "Mozilla/5.0"}, 
+            proxies=proxies, 
+            timeout=3)
+    except requests.exceptions.RequestException:
+            return {"status": "China Unreachable", "speed": 0, "proxy": proxy}
+
+
+
+
+    
+
+
         
         exit_country = "N/A"
         try:
