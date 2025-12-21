@@ -14,21 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇨🇦(CA)-15.235.83.228
-  type: vmess
-  server: 15.235.83.228
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  network: ws
-  tls: true
-  servername: lammaland.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-  alterId: 0
-  cipher: auto
 - name: VMESS-WS-TLS-🇺🇸(US)-hgtrojan.zabc.net
   type: vmess
   server: hgtrojan.zabc.net
@@ -44,12 +29,27 @@ proxies:
       Host: hgtrojan.zabc.net
   alterId: 0
   cipher: auto
+- name: VMESS-WS-TLS-🇨🇦(CA)-15.235.83.228
+  type: vmess
+  server: 15.235.83.228
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
+  servername: lammaland.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: lammaland.org
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇨🇦(CA)-15.235.83.228
   - VMESS-WS-TLS-🇺🇸(US)-hgtrojan.zabc.net
+  - VMESS-WS-TLS-🇨🇦(CA)-15.235.83.228
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -66,8 +66,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇨🇦(CA)-15.235.83.228
   - VMESS-WS-TLS-🇺🇸(US)-hgtrojan.zabc.net
+  - VMESS-WS-TLS-🇨🇦(CA)-15.235.83.228
 rule-providers:
   adblock:
     type: http

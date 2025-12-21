@@ -14,19 +14,45 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VLESS-WS-TLS-🇵🇱(PL)-173.245.59.217
+- name: VLESS-WS-TLS-🇺🇸(US)-104.21.48.1
   type: vless
-  server: 173.245.59.217
+  server: 104.21.48.1
   port: 443
-  uuid: ee122f13-9b54-49b6-abc5-aa47b464fdb3
+  uuid: 6e95243c-544c-4770-b2cd-a5c5cc10211e
   network: ws
   tls: true
-  servername: azizoarjmand.info
+  servername: DIP.Amperes.Workers.DEV
   client-fingerprint: chrome
   ws-opts:
-    path: /yhowcws
+    path: /assets
     headers:
-      Host: azizoarjmand.info
+      Host: dip.amperes.workers.dev
+- name: VLESS-WS-TLS-🇺🇸(US)-162.159.153.2
+  type: vless
+  server: 162.159.153.2
+  port: 443
+  uuid: 495c0dad-3268-4470-ac57-887c5089db0d
+  network: ws
+  tls: true
+  servername: ziyong.boringdad.netlib.re
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ziyong.boringdad.netlib.re
+- name: VLESS-WS-TLS-🇺🇸(US)-visa.com
+  type: vless
+  server: visa.com
+  port: 443
+  uuid: 495c0dad-3268-4470-ac57-887c5089db0d
+  network: ws
+  tls: true
+  servername: ziyong.boringdad.netlib.re
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ziyong.boringdad.netlib.re
 - name: VLESS-WS-TLS-🇳🇱(NL)-www.speedtest.net
   type: vless
   server: www.speedtest.net
@@ -40,7 +66,7 @@ proxies:
     path: /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048
     headers:
       Host: w.arfilter2.blog
-- name: VLESS-TCP-TLS-🇺🇸(US)-ams1.fromblancwithlove.com
+- name: VLESS-TCP-TLS-🇳🇱(NL)-ams1.fromblancwithlove.com
   type: vless
   server: ams1.fromblancwithlove.com
   port: 8443
@@ -49,6 +75,44 @@ proxies:
   tls: true
   servername: ams1.fromblancwithlove.com
   client-fingerprint: chrome
+- name: VLESS-WS-TLS-🇬🇧(GB)-173.245.59.217
+  type: vless
+  server: 173.245.59.217
+  port: 443
+  uuid: ee122f13-9b54-49b6-abc5-aa47b464fdb3
+  network: ws
+  tls: true
+  servername: azizoarjmand.info
+  client-fingerprint: chrome
+  ws-opts:
+    path: /yhowcws
+    headers:
+      Host: azizoarjmand.info
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-51.158.206.26
+  type: vless
+  server: 51.158.206.26
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-WS-TLS-🇳🇱(NL)-45.87.153.45
+  type: vless
+  server: 45.87.153.45
+  port: 443
+  uuid: 260b83b9-e8bb-434c-969b-9f3034cf8cb5
+  network: ws
+  tls: true
+  servername: Join---nitruStore---Join---nitruStore
+  client-fingerprint: chrome
+  ws-opts:
+    path: /fgoexdws
+    headers:
+      Host: Join---nitruStore---Join---nitruStore Join---nitruStore---Join---nitruStore
+        Join---nitruStore---Join---nitruStore Join---nitruStore---Join---nitruStore
+        Join---nitruStore---Join---nitruStore Join---nitruStore---Join---nitruStore
 - name: VLESS-TCP-REALITY-🇳🇱(NL)-45.8.145.65
   type: vless
   server: 45.8.145.65
@@ -59,28 +123,172 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-WS-TLS-🇺🇸(US)-104.21.3.219
+- name: VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
   type: vless
-  server: 104.21.3.219
-  port: 8443
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  server: www.speedtest.net
+  port: 443
+  uuid: 98dc8a17-0e58-4270-8407-95869d24bb5c
   network: ws
   tls: true
-  servername: ovhwuxian.pai50288.uk
+  servername: Parsa-0ShPE1.pARsa-E06.wOrkERs.Dev
   client-fingerprint: chrome
   ws-opts:
-    path: /57ba2ab1
+    path: /?ed=2560
     headers:
-      Host: ovhwuxian.pai50288.uk
+      Host: Parsa-0ShPE1.pARsa-E06.wOrkERs.Dev
+- name: VLESS-WS-TLS-🇺🇸(US)-172.64.149.80
+  type: vless
+  server: 172.64.149.80
+  port: 443
+  uuid: 733a9a09-ba93-4e73-b1f3-ae0bcbd88310
+  network: ws
+  tls: true
+  servername: noisy-paper-6b70.grirbp.workers.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: noisy-paper-6b70.grirbp.workers.dev
+- name: VLESS-WS-TLS-🇨🇦(CA)-www.speedtest.net
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: 17805789-e705-4b20-b487-e9372b06fe4c
+  network: ws
+  tls: true
+  servername: 001.eLEcTRoceLLcO-Cf-003.WORkeRS.dEV
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoidTFKWmpMZmRod1Jqa2pPUyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+    headers:
+      Host: 001.electrocellco-cf-003.workers.dev
+- name: VLESS-WS-TLS-🇺🇸(US)-creativecommons.org
+  type: vless
+  server: creativecommons.org
+  port: 443
+  uuid: 2053d74c-2a3b-453b-b665-8e25142a7569
+  network: ws
+  tls: true
+  servername: shiny.revilseptember.workers.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /socks5://8.222.249.27:1100
+    headers:
+      Host: shiny.revilseptember.workers.dev
+- name: VLESS-WS-TLS-🇩🇪(DE)-185.235.241.57
+  type: vless
+  server: 185.235.241.57
+  port: 443
+  uuid: e615a5ba-fce3-4ffa-9c86-b0327a8a107a
+  network: ws
+  tls: true
+  servername: Join---nitruStore---Join---nitruStore
+  client-fingerprint: chrome
+  ws-opts:
+    path: /hormoz
+    headers:
+      Host: Join---nitruStore---Join---nitruStore Join---nitruStore---Join---nitruStore
+        Join---nitruStore---Join---nitruStore Join---nitruStore---Join---nitruStore
+        Join---nitruStore---Join---nitruStore Join---nitruStore---Join---nitruStore
+- name: VLESS-WS-TLS-🇩🇪(DE)-www.speedtest.net
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: 88538870-5626-4cd7-9cda-1e0b6253c9ce
+  network: ws
+  tls: true
+  servername: kalam.mrconfigur.site
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: kalam.mrconfigur.site
+- name: VLESS-WS-TLS-🇩🇪(DE)-newsletter.mydailynews.info
+  type: vless
+  server: newsletter.mydailynews.info
+  port: 443
+  uuid: 7578f457-0f1f-416d-b136-f833f4544e24
+  network: ws
+  tls: true
+  servername: newsletter.mydailynews.info
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ray
+    headers:
+      Host: newsletter.mydailynews.info
+- name: VLESS-WS-TLS-🇨🇦(CA)-172.67.171.106
+  type: vless
+  server: 172.67.171.106
+  port: 443
+  uuid: 2053d74c-2a3b-453b-b665-8e25142a7569
+  network: ws
+  tls: true
+  servername: Shiny.REvilSeptembEr.WorkErs.dEv
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assets
+    headers:
+      Host: shiny.revilseptember.workers.dev
+- name: VLESS-WS-TLS-🇳🇱(NL)-172.64.33.91
+  type: vless
+  server: 172.64.33.91
+  port: 443
+  uuid: 02e46039-200d-4ae4-ac90-b0d619f72034
+  network: ws
+  tls: true
+  servername: redlabell.info
+  client-fingerprint: chrome
+  ws-opts:
+    path: /aafeuws
+    headers:
+      Host: redlabell.info
+- name: VLESS-WS-TLS-🇩🇪(DE)-www.speedtest.net_1
+  type: vless
+  server: www.speedtest.net
+  port: 2083
+  uuid: baa9704e-c875-4d15-8b22-576be38bb723
+  network: ws
+  tls: true
+  servername: dl5.hajalwi.ir.
+  client-fingerprint: chrome
+  ws-opts:
+    path: /---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN---Golestanv_VPN?ed=8080
+    headers:
+      Host: dl5.hajalwi.ir.
+- name: VLESS-TCP-REALITY-🇷🇺(RU)-185.130.114.253
+  type: vless
+  server: 185.130.114.253
+  port: 443
+  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: ⚡ Auto-Select-VLESS
   type: url-test
   proxies: &id001
-  - VLESS-WS-TLS-🇵🇱(PL)-173.245.59.217
+  - VLESS-WS-TLS-🇺🇸(US)-104.21.48.1
+  - VLESS-WS-TLS-🇺🇸(US)-162.159.153.2
+  - VLESS-WS-TLS-🇺🇸(US)-visa.com
   - VLESS-WS-TLS-🇳🇱(NL)-www.speedtest.net
-  - VLESS-TCP-TLS-🇺🇸(US)-ams1.fromblancwithlove.com
+  - VLESS-TCP-TLS-🇳🇱(NL)-ams1.fromblancwithlove.com
+  - VLESS-WS-TLS-🇬🇧(GB)-173.245.59.217
+  - VLESS-TCP-REALITY-🇳🇱(NL)-51.158.206.26
+  - VLESS-WS-TLS-🇳🇱(NL)-45.87.153.45
   - VLESS-TCP-REALITY-🇳🇱(NL)-45.8.145.65
-  - VLESS-WS-TLS-🇺🇸(US)-104.21.3.219
+  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
+  - VLESS-WS-TLS-🇺🇸(US)-172.64.149.80
+  - VLESS-WS-TLS-🇨🇦(CA)-www.speedtest.net
+  - VLESS-WS-TLS-🇺🇸(US)-creativecommons.org
+  - VLESS-WS-TLS-🇩🇪(DE)-185.235.241.57
+  - VLESS-WS-TLS-🇩🇪(DE)-www.speedtest.net
+  - VLESS-WS-TLS-🇩🇪(DE)-newsletter.mydailynews.info
+  - VLESS-WS-TLS-🇨🇦(CA)-172.67.171.106
+  - VLESS-WS-TLS-🇳🇱(NL)-172.64.33.91
+  - VLESS-WS-TLS-🇩🇪(DE)-www.speedtest.net_1
+  - VLESS-TCP-REALITY-🇷🇺(RU)-185.130.114.253
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -97,11 +305,26 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VLESS
   - 🔗 Auto-Failover-VLESS
-  - VLESS-WS-TLS-🇵🇱(PL)-173.245.59.217
+  - VLESS-WS-TLS-🇺🇸(US)-104.21.48.1
+  - VLESS-WS-TLS-🇺🇸(US)-162.159.153.2
+  - VLESS-WS-TLS-🇺🇸(US)-visa.com
   - VLESS-WS-TLS-🇳🇱(NL)-www.speedtest.net
-  - VLESS-TCP-TLS-🇺🇸(US)-ams1.fromblancwithlove.com
+  - VLESS-TCP-TLS-🇳🇱(NL)-ams1.fromblancwithlove.com
+  - VLESS-WS-TLS-🇬🇧(GB)-173.245.59.217
+  - VLESS-TCP-REALITY-🇳🇱(NL)-51.158.206.26
+  - VLESS-WS-TLS-🇳🇱(NL)-45.87.153.45
   - VLESS-TCP-REALITY-🇳🇱(NL)-45.8.145.65
-  - VLESS-WS-TLS-🇺🇸(US)-104.21.3.219
+  - VLESS-WS-TLS-🇺🇸(US)-www.speedtest.net
+  - VLESS-WS-TLS-🇺🇸(US)-172.64.149.80
+  - VLESS-WS-TLS-🇨🇦(CA)-www.speedtest.net
+  - VLESS-WS-TLS-🇺🇸(US)-creativecommons.org
+  - VLESS-WS-TLS-🇩🇪(DE)-185.235.241.57
+  - VLESS-WS-TLS-🇩🇪(DE)-www.speedtest.net
+  - VLESS-WS-TLS-🇩🇪(DE)-newsletter.mydailynews.info
+  - VLESS-WS-TLS-🇨🇦(CA)-172.67.171.106
+  - VLESS-WS-TLS-🇳🇱(NL)-172.64.33.91
+  - VLESS-WS-TLS-🇩🇪(DE)-www.speedtest.net_1
+  - VLESS-TCP-REALITY-🇷🇺(RU)-185.130.114.253
 rule-providers:
   adblock:
     type: http
