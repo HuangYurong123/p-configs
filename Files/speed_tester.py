@@ -126,21 +126,38 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
         if not ipv6_supported:
             return {"status": "No IPv6", "speed": 0, "proxy": proxy}
 
-
-    
-            # --- 增加中国连通性检测 ---
-            # 模拟访问百度，如果3秒打不开，说明国内连通性极差
+        # --- 增加中国连通性检测 ---
+        # 模拟访问百度，如果3秒打不开，说明国内连通性极差
         try:
-            requests.get("http://connect.rom.miui.com/generate_204",headers={"User-Agent": "Mozilla/5.0"},proxies=proxies,timeout=3)
-        except requests.exceptions.RequestException:
+            # 可以使用多个国内网站进行测试
+            china_test_urls = [
+                "http://www.baidu.com",
+                "http://connect.rom.miui.com/generate_204",
+                "http://www.qq.com"
+            ]
+            
+            # 尝试多个URL，只要一个成功就认为可连通
+            china_connected = False
+            for url in china_test_urls:
+                try:
+                    resp = requests.get(
+                        url,
+                        headers={"User-Agent": "Mozilla/5.0"},
+                        proxies=proxies,
+                        timeout=3
+                    )
+                    if resp.status_code < 500:  # 2xx, 3xx, 4xx都算连通（4xx至少连接到了服务器）
+                        china_connected = True
+                        break
+                except requests.exceptions.RequestException:
+                    continue
+            
+            if not china_connected:
+                return {"status": "China Unreachable", "speed": 0, "proxy": proxy}
+                
+        except Exception as e:
+            # 如果测试过程中出现异常，也认为连通性有问题
             return {"status": "China Unreachable", "speed": 0, "proxy": proxy}
-
-
-
-
-    
-
-
         
         exit_country = "N/A"
         try:
