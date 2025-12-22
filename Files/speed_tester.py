@@ -28,7 +28,7 @@ REQUEST_SOCKET_TIMEOUT_SECONDS = 5
 STARTUP_WAIT_SECONDS = 5.0
 
 # --- Google 连通性 Test Settings ---
-IPV6_TEST_URL = "http://connectivitycheck.gstatic.com/generate_204"
+IPV6_TEST_URL = "https://cp.cloudflare.com/generate_204"
 IPV6_TIMEOUT_SECONDS = 3
 
 # --- Geo & Naming ---
