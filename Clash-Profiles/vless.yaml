@@ -36,27 +36,33 @@ proxies:
   tls: true
   servername: ams1.fromblancwithlove.com
   client-fingerprint: chrome
-- name: VLESS-WS-TLS-🇺🇦(UA)-173.245.59.217
+- name: VLESS-TCP-REALITY-🇭🇰(HK)-8.218.41.50
   type: vless
-  server: 173.245.59.217
+  server: 8.218.41.50
   port: 443
-  uuid: ee122f13-9b54-49b6-abc5-aa47b464fdb3
-  network: ws
-  tls: true
-  servername: azizoarjmand.info
-  client-fingerprint: chrome
-  ws-opts:
-    path: /yhowcws
-    headers:
-      Host: azizoarjmand.info
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-51.250.75.158
-  type: vless
-  server: 51.250.75.158
-  port: 443
-  uuid: 76f385df-bb5c-4e92-b60b-fce540b0a6a0
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
   network: tcp
   tls: true
-  servername: api-maps.yandex.ru
+  servername: cdn.userway.org
+  client-fingerprint: chrome
+- name: VLESS-TCP-REALITY-🇳🇱(NL)-45.67.228.11
+  type: vless
+  server: 45.67.228.11
+  port: 443
+  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: VLESS-TCP-REALITY-🇷🇺(RU)-109.248.203.71
+  type: vless
+  server: 109.248.203.71
+  port: 443
+  uuid: 6142e134-346a-4ffe-bf5b-c3fb7e3c9dfb
+  network: tcp
+  tls: true
+  servername: www.google.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
 - name: VLESS-TCP-REALITY-🇷🇺(RU)-51.250.73.31
@@ -69,50 +75,30 @@ proxies:
   servername: api-maps.yandex.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: VLESS-TCP-REALITY-🇭🇰(HK)-8.218.41.50
+- name: VLESS-WS-TLS-🇬🇧(GB)-173.245.59.217
   type: vless
-  server: 8.218.41.50
+  server: 173.245.59.217
   port: 443
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-  network: tcp
-  tls: true
-  servername: cdn.userway.org
-  client-fingerprint: chrome
-- name: VLESS-WS-TLS-🌐(XX)-104.21.3.219
-  type: vless
-  server: 104.21.3.219
-  port: 8443
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  uuid: ee122f13-9b54-49b6-abc5-aa47b464fdb3
   network: ws
   tls: true
-  servername: ovhwuxian.pai50288.uk
+  servername: azizoarjmand.info
   client-fingerprint: chrome
   ws-opts:
-    path: /57ba2ab1
+    path: /yhowcws
     headers:
-      Host: ovhwuxian.pai50288.uk
-- name: VLESS-TCP-REALITY-🇷🇺(RU)-109.248.203.71
-  type: vless
-  server: 109.248.203.71
-  port: 443
-  uuid: 6142e134-346a-4ffe-bf5b-c3fb7e3c9dfb
-  network: tcp
-  tls: true
-  servername: www.google.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+      Host: azizoarjmand.info
 proxy-groups:
 - name: ⚡ Auto-Select-VLESS
   type: url-test
   proxies: &id001
   - VLESS-WS-TLS-🇳🇱(NL)-104.17.147.22
   - VLESS-TCP-TLS-🇳🇱(NL)-ams1.fromblancwithlove.com
-  - VLESS-WS-TLS-🇺🇦(UA)-173.245.59.217
-  - VLESS-TCP-REALITY-🇷🇺(RU)-51.250.75.158
-  - VLESS-TCP-REALITY-🇷🇺(RU)-51.250.73.31
   - VLESS-TCP-REALITY-🇭🇰(HK)-8.218.41.50
-  - VLESS-WS-TLS-🌐(XX)-104.21.3.219
+  - VLESS-TCP-REALITY-🇳🇱(NL)-45.67.228.11
   - VLESS-TCP-REALITY-🇷🇺(RU)-109.248.203.71
+  - VLESS-TCP-REALITY-🇷🇺(RU)-51.250.73.31
+  - VLESS-WS-TLS-🇬🇧(GB)-173.245.59.217
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -131,12 +117,11 @@ proxy-groups:
   - 🔗 Auto-Failover-VLESS
   - VLESS-WS-TLS-🇳🇱(NL)-104.17.147.22
   - VLESS-TCP-TLS-🇳🇱(NL)-ams1.fromblancwithlove.com
-  - VLESS-WS-TLS-🇺🇦(UA)-173.245.59.217
-  - VLESS-TCP-REALITY-🇷🇺(RU)-51.250.75.158
-  - VLESS-TCP-REALITY-🇷🇺(RU)-51.250.73.31
   - VLESS-TCP-REALITY-🇭🇰(HK)-8.218.41.50
-  - VLESS-WS-TLS-🌐(XX)-104.21.3.219
+  - VLESS-TCP-REALITY-🇳🇱(NL)-45.67.228.11
   - VLESS-TCP-REALITY-🇷🇺(RU)-109.248.203.71
+  - VLESS-TCP-REALITY-🇷🇺(RU)-51.250.73.31
+  - VLESS-WS-TLS-🇬🇧(GB)-173.245.59.217
 rule-providers:
   adblock:
     type: http
