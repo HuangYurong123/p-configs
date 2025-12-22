@@ -131,10 +131,9 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
         try:
             # 可以使用多个国内网站进行测试
             china_test_urls = [
-                "https://aliyunping.oss-cn-shenzhen.aliyuncs.com"
-           
-               
-                
+                "oss-cn-hongkong.aliyuncs.com"
+            
+            
             ]
             
             # 尝试多个URL，只要一个成功就认为可连通
@@ -147,7 +146,7 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
                         proxies=proxies,
                         timeout=3
                     )
-                    if resp.status_code < 300:  # 2xx, 3xx, 4xx都算连通（4xx至少连接到了服务器）
+                    if resp.status_code < 1000:  # 2xx, 3xx, 4xx都算连通（4xx至少连接到了服务器）
                         china_connected = True
                         break
                 except requests.exceptions.RequestException:
@@ -159,6 +158,11 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
         except Exception as e:
             # 如果测试过程中出现异常，也认为连通性有问题
             return {"status": "China Unreachable", "speed": 0, "proxy": proxy}
+
+
+
+
+        
         
         exit_country = "N/A"
         try:
