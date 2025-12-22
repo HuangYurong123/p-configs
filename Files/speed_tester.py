@@ -131,8 +131,8 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
         try:
             # 可以使用多个国内网站进行测试
             china_test_urls = [
-                "https://aliyunping.oss-cn-shenzhen.aliyuncs.com",
-                "https://aliyunping.oss-cn-hangzhou.aliyuncs.com",
+                "https://aliyunping.oss-cn-shenzhen.aliyuncs.com"
+           
                
                 
             ]
