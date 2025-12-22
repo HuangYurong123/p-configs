@@ -19,7 +19,7 @@ PROTOCOLS_TO_TEST = ["vless.txt", "vmess.txt", "trojan.txt", "ss.txt", "hy2.txt"
 # --- Performance & Speed Test Settings ---
 MAX_WORKERS = 100
 BASE_SOCKS_PORT = 10800
-SPEED_THRESHOLD_MBPS = 20
+SPEED_THRESHOLD_MBPS = 30
 TEST_FILE_URL = "https://speed.cloudflare.com/__down?bytes=10000000"  # 10MB
 
 # --- Timeouts ---
@@ -133,7 +133,6 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
             china_test_urls = [
                 "http://connect.rom.miui.com/generate_204"
             
-            
             ]
             
             # 尝试多个URL，只要一个成功就认为可连通
@@ -158,7 +157,6 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
         except Exception as e:
             # 如果测试过程中出现异常，也认为连通性有问题
             return {"status": "China Unreachable", "speed": 0, "proxy": proxy}
-
 
 
 
