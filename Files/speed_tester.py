@@ -131,7 +131,7 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
         try:
             # 可以使用多个国内网站进行测试
             china_test_urls = [
-                "oss-cn-hongkong.aliyuncs.com"
+                "https://cp.cloudflare.com/generate_204"
             
             
             ]
