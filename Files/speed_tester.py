@@ -131,7 +131,7 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
         try:
             # 可以使用多个国内网站进行测试
             china_test_urls = [
-                "https://cp.cloudflare.com/generate_204"
+                "http://connect.rom.miui.com/generate_204"
             
             
             ]
@@ -146,7 +146,7 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
                         proxies=proxies,
                         timeout=3
                     )
-                    if resp.status_code < 1000:  # 2xx, 3xx, 4xx都算连通（4xx至少连接到了服务器）
+                    if resp.status_code < 600:  # 2xx, 3xx, 4xx都算连通（4xx至少连接到了服务器）
                         china_connected = True
                         break
                 except requests.exceptions.RequestException:
