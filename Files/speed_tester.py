@@ -17,18 +17,18 @@ SOURCE_DIR = "../Splitted-By-Protocol"
 PROTOCOLS_TO_TEST = ["vless.txt", "vmess.txt", "trojan.txt", "ss.txt", "hy2.txt", "tuic.txt"]
 
 # --- Performance & Speed Test Settings ---
-MAX_WORKERS = 100
+MAX_WORKERS = 120
 BASE_SOCKS_PORT = 10800
-SPEED_THRESHOLD_MBPS = 30
+SPEED_THRESHOLD_MBPS = 20
 TEST_FILE_URL = "https://speed.cloudflare.com/__down?bytes=10000000"  # 10MB
 
 # --- Timeouts ---
 MAX_TEST_DURATION_SECONDS = 5
-REQUEST_SOCKET_TIMEOUT_SECONDS = 5
+REQUEST_SOCKET_TIMEOUT_SECONDS = 3 
 STARTUP_WAIT_SECONDS = 5.0
 
 # --- Google 连通性 Test Settings ---
-IPV6_TEST_URL = "http://www.gstatic.com/generate_204"
+IPV6_TEST_URL = "https://ipv6.google.com/generate_204"
 IPV6_TIMEOUT_SECONDS = 3
 
 # --- Geo & Naming ---
@@ -87,7 +87,7 @@ def create_v2ray_config(proxy: Proxy, local_socks_port: int, task_id: int) -> Op
         return None
     if not outbound_config: return None
     
-    rate_limit_kibps = 9155
+    rate_limit_kibps = 12000
 
     config: Dict[str, Any] = {
         "log": {"loglevel": "error"},
@@ -145,7 +145,7 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
                         proxies=proxies,
                         timeout=3
                     )
-                    if resp.status_code < 300:  # 2xx, 3xx, 4xx都算连通（4xx至少连接到了服务器）
+                    if resp.status_code < 201:  # 2xx, 3xx, 4xx都算连通（4xx至少连接到了服务器）
                         china_connected = True
                         break
                 except requests.exceptions.RequestException:
