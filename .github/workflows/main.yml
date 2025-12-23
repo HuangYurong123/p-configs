@@ -49,9 +49,26 @@ jobs:
         run: python3 create_base64_lists.py     
 
 
+   #  - name: Merge all subscriptions into si
+   #    working-directory: ./Splitted-By
+   #    run: cat *.txt > all_subscrip
+
+
+
       - name: Merge all subscriptions into single file
-        working-directory: ./Splitted-By-Protocol
-        run: cat *.txt > all_subscriptions.txt
+        run: |
+          # 1. 合并原目录下除了 vless 和 vmess 之外的所有协议 (ss, trojan, hy2 等)
+          # 使用 find 命令排除掉不需要的原始文件
+          find ./Splitted-By-Protocol -maxdepth 1 -type f -name "*.txt" ! -name "vless.txt" ! -name "vmess.txt" -exec cat {} + > all_subscriptions.txt
+          
+          # 2. 追加另一个目录中已经过滤好的 vless 和 vmess 文件
+          # 使用 -f 判断文件是否存在，防止因为缺少其中一个协议导致 action 报错停止
+          [ -f "./Filtered/vless.txt" ] && cat "./Filtered/vless.txt" >> all_subscriptions.txt
+          [ -f "./Filtered/vmess.txt" ] && cat "./Filtered/vmess.txt" >> all_subscriptions.txt
+          
+          echo "合并完成，已排除原始 vless/vmess，并加入过滤后的版本。"
+
+
 
            
 
