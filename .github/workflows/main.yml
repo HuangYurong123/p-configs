@@ -7,7 +7,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 */6 * * *" # Runs every 6 hours
+    - cron: "0 */48 * * *" # Runs every 6 hours
   workflow_dispatch: # Allows manual runs
 
 jobs:
@@ -49,19 +49,11 @@ jobs:
         run: python3 create_base64_lists.py     
 
 
-
-
-
-
-
       - name: Merge all subscriptions into single file
         working-directory: ./Splitted-By-Protocol
         run: cat *.txt > all_subscriptions.txt
 
-
-        
-
-        
+           
 
       - name: Generate Clash Meta profile
         working-directory: ./Files
