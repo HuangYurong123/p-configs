@@ -145,7 +145,7 @@ def test_proxy(proxy: Proxy, task_id: int) -> Dict[str, Any]:
                         proxies=proxies,
                         timeout=3
                     )
-                    if resp.status_code < 600:  # 2xx, 3xx, 4xx都算连通（4xx至少连接到了服务器）
+                    if resp.status_code < 300:  # 2xx, 3xx, 4xx都算连通（4xx至少连接到了服务器）
                         china_connected = True
                         break
                 except requests.exceptions.RequestException:
