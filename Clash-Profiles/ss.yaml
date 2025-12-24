@@ -20,25 +20,11 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: WVrke5nFgkRDCDex44Lnvu
-- name: SS-C20P-🇫🇷(FR)-62.210.88.22_1
-  type: ss
-  server: 62.210.88.22
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: tVVIFjFZJOZMwpT4LLtBJ4
-- name: SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
-  type: ss
-  server: tr-1.stunnel.cc
-  port: 8444
-  cipher: chacha20-ietf-poly1305
-  password: tunnel-fbrof
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇷(FR)-62.210.88.22_1
-  - SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -56,8 +42,6 @@ proxy-groups:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇷(FR)-62.210.88.22_1
-  - SS-C20P-🇹🇷(TR)-tr-1.stunnel.cc
 rule-providers:
   adblock:
     type: http

@@ -18,7 +18,7 @@ proxies:
   type: vmess
   server: 95.81.114.252
   port: 44749
-  uuid: b2da9920-b0a7-4354-9e26-3833ab8d00d0
+  uuid: b01d1e26-2f84-48da-88a1-1d06a77857f3
   network: ws
   tls: true
   servername: imafake.locker
@@ -29,27 +29,11 @@ proxies:
       Host: imafake.locker
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇭🇰(HK)-131.186.63.89
-  type: vmess
-  server: 131.186.63.89
-  port: 11655
-  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
-  network: ws
-  tls: true
-  servername: hk.nbee.pp.ua
-  client-fingerprint: chrome
-  ws-opts:
-    path: /aa
-    headers:
-      Host: hk.nbee.pp.ua
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
   - VMESS-WS-TLS-🇷🇺(RU)-95.81.114.252
-  - VMESS-WS-TLS-🇭🇰(HK)-131.186.63.89
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -67,7 +51,6 @@ proxy-groups:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
   - VMESS-WS-TLS-🇷🇺(RU)-95.81.114.252
-  - VMESS-WS-TLS-🇭🇰(HK)-131.186.63.89
 rule-providers:
   adblock:
     type: http
