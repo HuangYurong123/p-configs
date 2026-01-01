@@ -14,52 +14,31 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-212.18.104.228
-  type: ss
-  server: 212.18.104.228
-  port: 56636
-  cipher: chacha20-ietf-poly1305
-  password: 4G2Y79EiFNHWuCPGOGEfUp
-- name: SS-C20P-🇺🇸(US)-212.18.104.228_1
-  type: ss
-  server: 212.18.104.228
-  port: 56636
-  cipher: chacha20-ietf-poly1305
-  password: vJcVZyduLtHyw3CsIeIJyB
 - name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
   server: 62.210.88.22
   port: 443
   cipher: chacha20-ietf-poly1305
   password: S84VoFmNwS7r8xGBc5hw3m
-- name: SS-C20P-🇫🇷(FR)-51.178.42.187
-  type: ss
-  server: 51.178.42.187
-  port: 5223
-  cipher: chacha20-ietf-poly1305
-  password: P3ixKQXemZD40cOIDR0x0P
 - name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
   server: 65.21.243.22
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
-- name: SS-C20P-🇭🇷(HR)-pro.turbooserver.com
+- name: SS-C20P-🇫🇷(FR)-51.178.42.187
   type: ss
-  server: pro.turbooserver.com
-  port: 1084
+  server: 51.178.42.187
+  port: 5223
   cipher: chacha20-ietf-poly1305
-  password: 3CzOPSKLa_vvzCgSePdIWw
+  password: P3ixKQXemZD40cOIDR0x0P
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-212.18.104.228
-  - SS-C20P-🇺🇸(US)-212.18.104.228_1
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇷(FR)-51.178.42.187
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇭🇷(HR)-pro.turbooserver.com
+  - SS-C20P-🇫🇷(FR)-51.178.42.187
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -76,12 +55,9 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-212.18.104.228
-  - SS-C20P-🇺🇸(US)-212.18.104.228_1
   - SS-C20P-🇫🇷(FR)-62.210.88.22
-  - SS-C20P-🇫🇷(FR)-51.178.42.187
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇭🇷(HR)-pro.turbooserver.com
+  - SS-C20P-🇫🇷(FR)-51.178.42.187
 rule-providers:
   adblock:
     type: http
