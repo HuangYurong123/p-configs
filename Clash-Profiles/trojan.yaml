@@ -14,32 +14,36 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.181.90.241
+- name: TROJAN-WS-TLS-🇺🇸(US)-bisque.qzz.io
   type: trojan
-  server: 63.181.90.241
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
+  server: bisque.qzz.io
+  port: 443
+  uuid: e86364fb-a5e3-42c3-b7fa-6ce8097fe19f
+  network: ws
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: bisque.qzz.io
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.193.238.117
+  ws-opts:
+    path: /66.135.4.222:8443
+    headers:
+      Host: bisque.qzz.io
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.196.24.56
   type: trojan
-  server: 18.193.238.117
+  server: 18.196.24.56
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: 18.196.24.56
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.181.90.241_1
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.76.94.79
   type: trojan
-  server: 63.181.90.241
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 45.76.94.79
+  port: 13448
+  uuid: 9BbIGN.nF=gztO-iq7ETmxdJ
   network: tcp
   tls: true
-  servername: 63.181.90.241
+  servername: ads.x5.ru
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇳🇱(NL)-45.63.40.126
   type: trojan
@@ -50,47 +54,11 @@ proxies:
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.193.238.117_1
-  type: trojan
-  server: 18.193.238.117
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 18.193.238.117
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-80.240.17.154
-  type: trojan
-  server: 80.240.17.154
-  port: 13448
-  uuid: 9BbIGN.nF=gztO-iq7ETmxdJ
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-140.82.35.244
-  type: trojan
-  server: 140.82.35.244
-  port: 20994
-  uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
   type: trojan
   server: 45.32.153.36
   port: 20994
   uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.76.94.79
-  type: trojan
-  server: 45.76.94.79
-  port: 13448
-  uuid: 9BbIGN.nF=gztO-iq7ETmxdJ
   network: tcp
   tls: true
   servername: ads.x5.ru
@@ -112,6 +80,24 @@ proxies:
   network: tcp
   tls: true
   servername: api.avito.ru
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-140.82.35.244
+  type: trojan
+  server: 140.82.35.244
+  port: 20994
+  uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  network: tcp
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-80.240.17.154
+  type: trojan
+  server: 80.240.17.154
+  port: 13448
+  uuid: 9BbIGN.nF=gztO-iq7ETmxdJ
+  network: tcp
+  tls: true
+  servername: ads.x5.ru
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇮🇹(IT)-172.238.229.254_1
   type: trojan
@@ -149,19 +135,6 @@ proxies:
   tls: true
   servername: fuzzyfonduepotstand.oscillatingovenmitt.click
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
-  type: trojan
-  server: usa.visa.com
-  port: 443
-  uuid: zWFjJENcljZm
-  network: ws
-  tls: true
-  servername: vahidqaz-7o61u7.vahidqaz.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vahidqaz-7o61u7.vahidqaz.workers.dev
 - name: TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
   type: trojan
   server: saas.sin.fan
@@ -175,41 +148,24 @@ proxies:
     path: /
     headers:
       Host: _acme-challenge.2go.cloudns.be
-- name: TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan_1
-  type: trojan
-  server: saas.sin.fan
-  port: 443
-  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  network: ws
-  tls: true
-  servername: _acme-challenge.2go.cloudns.be
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: _acme-challenge.2go.cloudns.be
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.90.241
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.238.117
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.90.241_1
-  - TROJAN-TCP-TLS-🇳🇱(NL)-45.63.40.126
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.238.117_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-80.240.17.154
-  - TROJAN-TCP-TLS-🇩🇪(DE)-140.82.35.244
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
+  - TROJAN-WS-TLS-🇺🇸(US)-bisque.qzz.io
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.196.24.56
   - TROJAN-TCP-TLS-🇩🇪(DE)-45.76.94.79
+  - TROJAN-TCP-TLS-🇳🇱(NL)-45.63.40.126
+  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
   - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
   - TROJAN-TCP-TLS-🇮🇹(IT)-172.238.229.254
+  - TROJAN-TCP-TLS-🇩🇪(DE)-140.82.35.244
+  - TROJAN-TCP-TLS-🇩🇪(DE)-80.240.17.154
   - TROJAN-TCP-TLS-🇮🇹(IT)-172.238.229.254_1
   - TROJAN-TCP-TLS-🇩🇰(DK)-83.172.159.181
   - TROJAN-TCP-TLS-🇯🇵(JP)-167.179.113.248
   - TROJAN-TCP-TLS-🇯🇵(JP)-45.77.20.207
-  - TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
   - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
-  - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan_1
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -226,24 +182,20 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.90.241
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.238.117
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.90.241_1
-  - TROJAN-TCP-TLS-🇳🇱(NL)-45.63.40.126
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.238.117_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-80.240.17.154
-  - TROJAN-TCP-TLS-🇩🇪(DE)-140.82.35.244
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
+  - TROJAN-WS-TLS-🇺🇸(US)-bisque.qzz.io
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.196.24.56
   - TROJAN-TCP-TLS-🇩🇪(DE)-45.76.94.79
+  - TROJAN-TCP-TLS-🇳🇱(NL)-45.63.40.126
+  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.153.36
   - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
   - TROJAN-TCP-TLS-🇮🇹(IT)-172.238.229.254
+  - TROJAN-TCP-TLS-🇩🇪(DE)-140.82.35.244
+  - TROJAN-TCP-TLS-🇩🇪(DE)-80.240.17.154
   - TROJAN-TCP-TLS-🇮🇹(IT)-172.238.229.254_1
   - TROJAN-TCP-TLS-🇩🇰(DK)-83.172.159.181
   - TROJAN-TCP-TLS-🇯🇵(JP)-167.179.113.248
   - TROJAN-TCP-TLS-🇯🇵(JP)-45.77.20.207
-  - TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
   - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
-  - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan_1
 rule-providers:
   adblock:
     type: http
