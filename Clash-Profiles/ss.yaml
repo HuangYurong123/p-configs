@@ -14,12 +14,18 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: SS-C20P-🇺🇸(US)-212.18.104.228
+- name: SS-C20P-🇳🇱(NL)-178.173.250.47
   type: ss
-  server: 212.18.104.228
-  port: 56636
+  server: 178.173.250.47
+  port: 56033
   cipher: chacha20-ietf-poly1305
-  password: hunr9vpT3PVbl6ZgVr7jxb
+  password: 5LD874oS39jQ26cT97NaAo
+- name: SS-C20P-🇫🇷(FR)-62.210.88.22
+  type: ss
+  server: 62.210.88.22
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: sZb3kI8zUtBAQ8LewHI4Lm
 - name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
   server: 65.21.243.22
@@ -30,7 +36,8 @@ proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
-  - SS-C20P-🇺🇸(US)-212.18.104.228
+  - SS-C20P-🇳🇱(NL)-178.173.250.47
+  - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇫🇮(FI)-65.21.243.22
   tolerance: 50
   lazy: false
@@ -48,7 +55,8 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
-  - SS-C20P-🇺🇸(US)-212.18.104.228
+  - SS-C20P-🇳🇱(NL)-178.173.250.47
+  - SS-C20P-🇫🇷(FR)-62.210.88.22
   - SS-C20P-🇫🇮(FI)-65.21.243.22
 rule-providers:
   adblock:
