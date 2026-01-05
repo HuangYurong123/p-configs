@@ -14,69 +14,9 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: VMESS-WS-TLS-🇭🇰(HK)-131.186.63.89
+- name: VMESS-WS-TLS-🇬🇧(GB)-57.128.189.227
   type: vmess
-  server: 131.186.63.89
-  port: 11655
-  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
-  network: ws
-  tls: true
-  servername: hk.nbee.pp.ua
-  client-fingerprint: chrome
-  ws-opts:
-    path: /aa
-    headers:
-      Host: hk.nbee.pp.ua
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.59.193
-  type: vmess
-  server: 57.129.59.193
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  network: ws
-  tls: true
-  servername: serkat.org/?Join----JKVPN---Join----JKVPN----Join----JKVPN----Join----JKVPN
-  client-fingerprint: chrome
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: serkat.org/?Join----JKVPN---Join----JKVPN----Join----JKVPN----Join----JKVPN
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.28.212
-  type: vmess
-  server: 57.129.28.212
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  network: ws
-  tls: true
-  servername: fapeng.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: fapeng.org
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125
-  type: vmess
-  server: 57.129.24.125
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  network: ws
-  tls: true
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  client-fingerprint: chrome
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.64.163
-  type: vmess
-  server: 57.129.64.163
+  server: 57.128.189.227
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   network: ws
@@ -96,12 +36,147 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   network: ws
   tls: true
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  client-fingerprint: chrome
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.28.212
+  type: vmess
+  server: 57.129.28.212
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
+  servername: fapeng.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: fapeng.org
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.25.24
+  type: vmess
+  server: 57.129.25.24
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
+  servername: pelang.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: pelang.org
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-141.95.126.134
+  type: vmess
+  server: 141.95.126.134
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
+  servername: jamekk.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: jamekk.org
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.64.238
+  type: vmess
+  server: 57.129.64.238
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
+  servername: kapelleng.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: kapelleng.com
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.59.194
+  type: vmess
+  server: 57.129.59.194
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
+  servername: yichueng.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: yichueng.org
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.28.64
+  type: vmess
+  server: 57.129.28.64
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
+  servername: serkat.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124_1
+  type: vmess
+  server: 57.129.24.124
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
   servername: aveiror.com
   client-fingerprint: chrome
   ws-opts:
     path: /linkvws
     headers:
       Host: aveiror.com
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.64.163
+  type: vmess
+  server: 57.129.64.163
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
+  servername: yichueng.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: yichueng.org
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.59.201
+  type: vmess
+  server: 57.129.59.201
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
+  servername: kampong.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: kampong.org
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇩🇪(DE)-57.129.28.67
@@ -119,49 +194,49 @@ proxies:
       Host: yichueng.org
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.28.215
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.59.193
   type: vmess
-  server: 57.129.28.215
+  server: 57.129.59.193
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   network: ws
   tls: true
-  servername: serkat.org
+  servername: serkat.org/?Join----JKVPN---Join----JKVPN----Join----JKVPN----Join----JKVPN
   client-fingerprint: chrome
   ws-opts:
-    path: linkvws
+    path: /linkvws
     headers:
-      Host: serkat.org
+      Host: serkat.org/?Join----JKVPN---Join----JKVPN----Join----JKVPN----Join----JKVPN
   alterId: 0
   cipher: auto
-- name: VMESS-WS-TLS-🌐(XX)-57.128.216.125
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.28.65
   type: vmess
-  server: 57.128.216.125
+  server: 57.129.28.65
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   network: ws
   tls: true
-  servername: kampong.org
+  servername: kapelleng.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: kapelleng.com
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.2.121
+  type: vmess
+  server: 57.129.2.121
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
+  servername: pelang.org
   client-fingerprint: chrome
   ws-opts:
     path: linkvws
     headers:
-      Host: kampong.org
-  alterId: 0
-  cipher: auto
-- name: VMESS-WS-TLS-🇩🇪(DE)-185.90.62.25
-  type: vmess
-  server: 185.90.62.25
-  port: 27199
-  uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
-  network: ws
-  tls: true
-  servername: imafake.locker
-  client-fingerprint: chrome
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: imafake.locker
+      Host: pelang.org
   alterId: 0
   cipher: auto
 - name: VMESS-WS-TLS-🇵🇱(PL)-146.59.118.249
@@ -179,21 +254,74 @@ proxies:
       Host: fapeng.org
   alterId: 0
   cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.59.202
+  type: vmess
+  server: 57.129.59.202
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
+  servername: fapeng.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: fapeng.org
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇫🇷(FR)-141.94.155.229
+  type: vmess
+  server: 141.94.155.229
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
+  servername: pelang.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: pelang.org
+  alterId: 0
+  cipher: auto
+- name: VMESS-WS-TLS-🇩🇪(DE)-57.129.59.199
+  type: vmess
+  server: 57.129.59.199
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  network: ws
+  tls: true
+  servername: kampong.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: kampong.org
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: ⚡ Auto-Select-VMESS
   type: url-test
   proxies: &id001
-  - VMESS-WS-TLS-🇭🇰(HK)-131.186.63.89
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.59.193
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.212
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.64.163
+  - VMESS-WS-TLS-🇬🇧(GB)-57.128.189.227
   - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.212
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.25.24
+  - VMESS-WS-TLS-🇩🇪(DE)-141.95.126.134
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.64.238
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.59.194
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.64
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124_1
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.64.163
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.59.201
   - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.67
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.215
-  - VMESS-WS-TLS-🌐(XX)-57.128.216.125
-  - VMESS-WS-TLS-🇩🇪(DE)-185.90.62.25
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.59.193
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.65
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.2.121
   - VMESS-WS-TLS-🇵🇱(PL)-146.59.118.249
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.59.202
+  - VMESS-WS-TLS-🇫🇷(FR)-141.94.155.229
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.59.199
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -210,17 +338,25 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-VMESS
   - 🔗 Auto-Failover-VMESS
-  - VMESS-WS-TLS-🇭🇰(HK)-131.186.63.89
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.59.193
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.212
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.125
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.64.163
+  - VMESS-WS-TLS-🇬🇧(GB)-57.128.189.227
   - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.212
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.25.24
+  - VMESS-WS-TLS-🇩🇪(DE)-141.95.126.134
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.64.238
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.59.194
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.64
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.24.124_1
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.64.163
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.59.201
   - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.67
-  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.215
-  - VMESS-WS-TLS-🌐(XX)-57.128.216.125
-  - VMESS-WS-TLS-🇩🇪(DE)-185.90.62.25
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.59.193
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.28.65
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.2.121
   - VMESS-WS-TLS-🇵🇱(PL)-146.59.118.249
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.59.202
+  - VMESS-WS-TLS-🇫🇷(FR)-141.94.155.229
+  - VMESS-WS-TLS-🇩🇪(DE)-57.129.59.199
 rule-providers:
   adblock:
     type: http
