@@ -14,31 +14,80 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: SS-C20P-🇨🇦(CA)-51.161.33.111
+  type: ss
+  server: 51.161.33.111
+  port: 11202
+  cipher: chacha20-ietf-poly1305
+  password: f6c4600d4d513857
+- name: SS-C20P-🇲🇽(MX)-185.163.1.90
+  type: ss
+  server: 185.163.1.90
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  password: 2b195d916cb84007
+- name: SS-C20P-🇬🇧(GB)-198.244.149.86
+  type: ss
+  server: 198.244.149.86
+  port: 26115
+  cipher: chacha20-ietf-poly1305
+  password: fa76d6f09c203a59
+- name: SS-C20P-🇬🇧(GB)-57.128.190.144
+  type: ss
+  server: 57.128.190.144
+  port: 47000
+  cipher: chacha20-ietf-poly1305
+  password: 27e645dcf11ded1f
+- name: SS-C20P-🇬🇧(GB)-57.129.129.139
+  type: ss
+  server: 57.129.129.139
+  port: 29183
+  cipher: chacha20-ietf-poly1305
+  password: ab0b81a5bff7ddea
 - name: SS-C20P-🇫🇷(FR)-62.210.88.22
   type: ss
   server: 62.210.88.22
   port: 443
   cipher: chacha20-ietf-poly1305
   password: w7oa3FMP8KY1S1Gg1TkmOn
+- name: SS-C20P-🇩🇪(DE)-193.43.104.64
+  type: ss
+  server: 193.43.104.64
+  port: 32941
+  cipher: chacha20-ietf-poly1305
+  password: ryemW70bc7ejzSjmYhFZav
+- name: SS-C20P-🇩🇪(DE)-162.19.228.25
+  type: ss
+  server: 162.19.228.25
+  port: 16014
+  cipher: chacha20-ietf-poly1305
+  password: e1052b0e6c949481
 - name: SS-C20P-🇫🇮(FI)-65.21.243.22
   type: ss
   server: 65.21.243.22
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: mZGUFWMAlfWqI4vP58zw9DAHxR8TZLndKkvRgHHFa9eqWdnx
-- name: SS-C20P-🇦🇺(AU)-45.15.185.70
+- name: SS-C20P-🇳🇱(NL)-178.173.250.47
   type: ss
-  server: 45.15.185.70
-  port: 990
+  server: 178.173.250.47
+  port: 56033
   cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  password: 5LD874oS39jQ26cT97NaAo
 proxy-groups:
 - name: ⚡ Auto-Select-SS
   type: url-test
   proxies: &id001
+  - SS-C20P-🇨🇦(CA)-51.161.33.111
+  - SS-C20P-🇲🇽(MX)-185.163.1.90
+  - SS-C20P-🇬🇧(GB)-198.244.149.86
+  - SS-C20P-🇬🇧(GB)-57.128.190.144
+  - SS-C20P-🇬🇧(GB)-57.129.129.139
   - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇩🇪(DE)-193.43.104.64
+  - SS-C20P-🇩🇪(DE)-162.19.228.25
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-C20P-🇳🇱(NL)-178.173.250.47
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -55,9 +104,16 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-SS
   - 🔗 Auto-Failover-SS
+  - SS-C20P-🇨🇦(CA)-51.161.33.111
+  - SS-C20P-🇲🇽(MX)-185.163.1.90
+  - SS-C20P-🇬🇧(GB)-198.244.149.86
+  - SS-C20P-🇬🇧(GB)-57.128.190.144
+  - SS-C20P-🇬🇧(GB)-57.129.129.139
   - SS-C20P-🇫🇷(FR)-62.210.88.22
+  - SS-C20P-🇩🇪(DE)-193.43.104.64
+  - SS-C20P-🇩🇪(DE)-162.19.228.25
   - SS-C20P-🇫🇮(FI)-65.21.243.22
-  - SS-C20P-🇦🇺(AU)-45.15.185.70
+  - SS-C20P-🇳🇱(NL)-178.173.250.47
 rule-providers:
   adblock:
     type: http
