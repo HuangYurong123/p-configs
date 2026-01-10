@@ -1,6 +1,8 @@
-trojan://telegram-id-privatevpns@15.224.1.8:22222?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-15.224.1.8
 trojan://zL7CpPYxhvFtYqm2yAbHrw@137.74.41.156:7494?security=none&headerType=none&type=tcp#TROJAN-TCP-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-137.74.41.156
+trojan://telegram-id-privatevpns@51.44.57.66:22222?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-51.44.57.66
 trojan://zL7CpPYxhvFtYqm2yAbHrw@45.144.51.35:7390?security=none&headerType=none&type=tcp#TROJAN-TCP-%F0%9F%87%B5%F0%9F%87%B1%28PL%29-45.144.51.35
-trojan://telegram-id-privatevpns@13.39.204.51:22222?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-13.39.204.51
-trojan://87d1bfd4-574e-4c96-ad42-0426f27461ff@saas.sin.fan:443?path=%2F%3Fed%3D2560&security=tls&insecure=1&host=_acme-challenge.2go.cloudns.be&type=ws&allowInsecure=1&sni=_acme-challenge.2go.cloudns.be#TROJAN-WS-TLS-%F0%9F%87%BA%F0%9F%87%B8%28US%29-saas.sin.fan
+trojan://telegram-id-privatevpns@3.79.126.10:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-3.79.126.10
+trojan://telegram-id-directvpn@3.79.126.10:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-3.79.126.10_1
+trojan://telegram-id-privatevpns@3.79.126.10:22222?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-3.79.126.10_2
 trojan://87d1bfd4-574e-4c96-ad42-0426f27461ff@mfa.gov.ua:443?path=%2F&security=tls&host=_acme-challenge.2go.cloudns.be&type=ws&sni=_acme-challenge.2go.cloudns.be#TROJAN-WS-TLS-%F0%9F%87%BA%F0%9F%87%B8%28US%29-mfa.gov.ua
+trojan://87d1bfd4-574e-4c96-ad42-0426f27461ff@saas.sin.fan:443?path=%2F%3Fed%3D2560&security=tls&insecure=1&host=_acme-challenge.2go.cloudns.be&type=ws&allowInsecure=1&sni=_acme-challenge.2go.cloudns.be#TROJAN-WS-TLS-%F0%9F%87%BA%F0%9F%87%B8%28US%29-saas.sin.fan

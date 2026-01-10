@@ -14,15 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.224.1.8
-  type: trojan
-  server: 15.224.1.8
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 15.224.1.8
-  client-fingerprint: chrome
 - name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   type: trojan
   server: 137.74.41.156
@@ -31,6 +22,15 @@ proxies:
   network: tcp
   tls: false
   servername: 137.74.41.156
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.57.66
+  type: trojan
+  server: 51.44.57.66
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 51.44.57.66
+  client-fingerprint: chrome
 - name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   type: trojan
   server: 45.144.51.35
@@ -39,28 +39,33 @@ proxies:
   network: tcp
   tls: false
   servername: 45.144.51.35
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.204.51
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.79.126.10
   type: trojan
-  server: 13.39.204.51
+  server: 3.79.126.10
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: 13.39.204.51
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.79.126.10_1
   type: trojan
-  server: saas.sin.fan
-  port: 443
-  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  network: ws
+  server: 3.79.126.10
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
   tls: true
-  servername: _acme-challenge.2go.cloudns.be
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: _acme-challenge.2go.cloudns.be
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.79.126.10_2
+  type: trojan
+  server: 3.79.126.10
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 3.79.126.10
+  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   type: trojan
   server: mfa.gov.ua
@@ -74,16 +79,31 @@ proxies:
     path: /
     headers:
       Host: _acme-challenge.2go.cloudns.be
+- name: TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
+  type: trojan
+  server: saas.sin.fan
+  port: 443
+  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  network: ws
+  tls: true
+  servername: _acme-challenge.2go.cloudns.be
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: _acme-challenge.2go.cloudns.be
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.1.8
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.57.66
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.204.51
-  - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.79.126.10
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.79.126.10_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.79.126.10_2
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
+  - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -100,12 +120,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.224.1.8
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.57.66
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.204.51
-  - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.79.126.10
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.79.126.10_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-3.79.126.10_2
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
+  - TROJAN-WS-TLS-🇺🇸(US)-saas.sin.fan
 rule-providers:
   adblock:
     type: http
