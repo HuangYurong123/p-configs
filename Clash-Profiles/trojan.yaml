@@ -22,23 +22,14 @@ proxies:
   network: tcp
   tls: false
   servername: 137.74.41.156
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.57.66
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.137.193
   type: trojan
-  server: 51.44.57.66
+  server: 51.44.137.193
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: 51.44.57.66
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.181.72.125
-  type: trojan
-  server: 63.181.72.125
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 63.181.72.125
+  servername: 51.44.137.193
   client-fingerprint: chrome
 - name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   type: trojan
@@ -48,6 +39,15 @@ proxies:
   network: tcp
   tls: false
   servername: 45.144.51.35
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.102.248
+  type: trojan
+  server: 15.236.102.248
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 15.236.102.248
+  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
   type: trojan
   server: cf.090227.xyz
@@ -79,9 +79,9 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.57.66
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.72.125
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.137.193
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.102.248
   - TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   tolerance: 50
@@ -101,9 +101,9 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.57.66
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.72.125
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.137.193
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.102.248
   - TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
 rule-providers:
