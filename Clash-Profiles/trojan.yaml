@@ -23,33 +23,49 @@ proxies:
   tls: true
   servername: 52.47.67.33
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.195.170.99
+- name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   type: trojan
-  server: 18.195.170.99
+  server: 137.74.41.156
+  port: 7494
+  uuid: zL7CpPYxhvFtYqm2yAbHrw
+  network: tcp
+  tls: false
+  servername: 137.74.41.156
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.156.177.29
+  type: trojan
+  server: 35.156.177.29
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: 18.195.170.99
+  servername: 35.156.177.29
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.195.170.99_1
+- name: TROJAN-WS-TLS-🇺🇸(US)-188.114.96.3
   type: trojan
-  server: 18.195.170.99
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
+  server: 188.114.96.3
+  port: 443
+  uuid: XZ|P5}oQVc8V
+  network: ws
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: 004.eLecTrOCELLco-cf-004.WorkeRs.DEv
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.195.170.99_2
+  ws-opts:
+    path: /eyJqdW5rIjoiQng3QkdTTklpbGdldG0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS4xMzUuMTY1LjI0NSIsIjExNi4yMDMuNTguMTY1Il19?ed=2560
+    headers:
+      Host: 004.electrocellco-cf-004.workers.dev
+- name: TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
   type: trojan
-  server: 18.195.170.99
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
+  server: usa.visa.com
+  port: 443
+  uuid: zWFjJENcljZm
+  network: ws
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: vahidqaz-7o61u7.vahidqaz.workers.dev
   client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vahidqaz-7o61u7.vahidqaz.workers.dev
 - name: TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   type: trojan
   server: mfa.gov.ua
@@ -68,9 +84,10 @@ proxy-groups:
   type: url-test
   proxies: &id001
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.67.33
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.195.170.99
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.195.170.99_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.195.170.99_2
+  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.177.29
+  - TROJAN-WS-TLS-🇺🇸(US)-188.114.96.3
+  - TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   tolerance: 50
   lazy: false
@@ -89,9 +106,10 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-TLS-🇫🇷(FR)-52.47.67.33
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.195.170.99
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.195.170.99_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.195.170.99_2
+  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
+  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.177.29
+  - TROJAN-WS-TLS-🇺🇸(US)-188.114.96.3
+  - TROJAN-WS-TLS-🇺🇸(US)-usa.visa.com
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
 rule-providers:
   adblock:
