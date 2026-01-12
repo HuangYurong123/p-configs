@@ -14,15 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.44.71
-  type: trojan
-  server: 51.45.44.71
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 51.45.44.71
-  client-fingerprint: chrome
 - name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   type: trojan
   server: 137.74.41.156
@@ -31,15 +22,55 @@ proxies:
   network: tcp
   tls: false
   servername: 137.74.41.156
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.135.243
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.181.220.145
   type: trojan
-  server: 13.39.135.243
+  server: 63.181.220.145
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: 13.39.135.243
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.181.220.145_1
+  type: trojan
+  server: 63.181.220.145
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.101
+  type: trojan
+  server: 51.45.9.101
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 51.45.9.101
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.181.220.145_2
+  type: trojan
+  server: 63.181.220.145
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 63.181.220.145
+  client-fingerprint: chrome
+- name: TROJAN-WS-TLS-🇺🇸(US)-blackshadow.dpdns.org
+  type: trojan
+  server: blackshadow.dpdns.org
+  port: 443
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  network: ws
+  tls: true
+  servername: blackshadow.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /195.123.218.174-443
+    headers:
+      Host: blackshadow.dpdns.org
 - name: TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   type: trojan
   server: mfa.gov.ua
@@ -57,9 +88,12 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.44.71
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.135.243
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.220.145
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.220.145_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.101
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.220.145_2
+  - TROJAN-WS-TLS-🇺🇸(US)-blackshadow.dpdns.org
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   tolerance: 50
   lazy: false
@@ -77,9 +111,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.44.71
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.135.243
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.220.145
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.220.145_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.45.9.101
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.181.220.145_2
+  - TROJAN-WS-TLS-🇺🇸(US)-blackshadow.dpdns.org
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
 rule-providers:
   adblock:
