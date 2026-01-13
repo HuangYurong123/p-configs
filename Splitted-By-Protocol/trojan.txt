@@ -1,7 +1,5 @@
-trojan://telegram-id-privatevpns@35.181.89.177:22222?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-35.181.89.177
-trojan://telegram-id-privatevpns@13.37.139.107:22222?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-13.37.139.107
+trojan://telegram-id-privatevpns@35.181.130.191:22222?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-35.181.130.191
 trojan://zL7CpPYxhvFtYqm2yAbHrw@137.74.41.156:7494?security=none&headerType=none&type=tcp#TROJAN-TCP-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-137.74.41.156
 trojan://zL7CpPYxhvFtYqm2yAbHrw@45.144.51.35:7390?security=none&headerType=none&type=tcp#TROJAN-TCP-%F0%9F%87%B5%F0%9F%87%B1%28PL%29-45.144.51.35
-trojan://Szb=-Zguo53QhmivcJqEAWtpdPX6Y@45.63.40.126:13345?security=tls&headerType=none&type=tcp&sni=ads.x5.ru#TROJAN-TCP-TLS-%F0%9F%87%B3%F0%9F%87%B1%28NL%29-45.63.40.126
-trojan://87d1bfd4-574e-4c96-ad42-0426f27461ff@cf.090227.xyz:443?security=tls&type=ws&sni=_acme-challenge.2go.cloudns.be&path=/&host=_acme-challenge.2go.cloudns.be#TROJAN-WS-TLS-%F0%9F%87%BA%F0%9F%87%B8%28US%29-cf.090227.xyz
+trojan://telegram-id-privatevpns@18.159.100.2:22222?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-18.159.100.2
 trojan://87d1bfd4-574e-4c96-ad42-0426f27461ff@mfa.gov.ua:443?path=%2F&security=tls&host=_acme-challenge.2go.cloudns.be&type=ws&sni=_acme-challenge.2go.cloudns.be#TROJAN-WS-TLS-%F0%9F%87%BA%F0%9F%87%B8%28US%29-mfa.gov.ua

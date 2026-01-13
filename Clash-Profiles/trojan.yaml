@@ -14,23 +14,14 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.89.177
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.130.191
   type: trojan
-  server: 35.181.89.177
+  server: 35.181.130.191
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: 35.181.89.177
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.139.107
-  type: trojan
-  server: 13.37.139.107
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 13.37.139.107
+  servername: 35.181.130.191
   client-fingerprint: chrome
 - name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   type: trojan
@@ -48,28 +39,15 @@ proxies:
   network: tcp
   tls: false
   servername: 45.144.51.35
-- name: TROJAN-TCP-TLS-🇳🇱(NL)-45.63.40.126
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.159.100.2
   type: trojan
-  server: 45.63.40.126
-  port: 13345
-  uuid: Szb=-Zguo53QhmivcJqEAWtpdPX6Y
+  server: 18.159.100.2
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: ads.x5.ru
+  servername: 18.159.100.2
   client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
-  type: trojan
-  server: cf.090227.xyz
-  port: 443
-  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  network: ws
-  tls: true
-  servername: _acme-challenge.2go.cloudns.be
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: _acme-challenge.2go.cloudns.be
 - name: TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   type: trojan
   server: mfa.gov.ua
@@ -87,12 +65,10 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.89.177
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.139.107
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.130.191
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-TCP-TLS-🇳🇱(NL)-45.63.40.126
-  - TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.100.2
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   tolerance: 50
   lazy: false
@@ -110,12 +86,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.89.177
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.139.107
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.130.191
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-TCP-TLS-🇳🇱(NL)-45.63.40.126
-  - TROJAN-WS-TLS-🇺🇸(US)-cf.090227.xyz
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.159.100.2
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
 rule-providers:
   adblock:
