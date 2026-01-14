@@ -14,14 +14,31 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.43.82
+- name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   type: trojan
-  server: 51.44.43.82
+  server: 137.74.41.156
+  port: 7494
+  uuid: zL7CpPYxhvFtYqm2yAbHrw
+  network: tcp
+  tls: false
+  servername: 137.74.41.156
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.96.120
+  type: trojan
+  server: 13.36.96.120
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: 51.44.43.82
+  servername: 13.36.96.120
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.22.38
+  type: trojan
+  server: 13.36.22.38
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 13.36.22.38
   client-fingerprint: chrome
 - name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   type: trojan
@@ -31,23 +48,6 @@ proxies:
   network: tcp
   tls: false
   servername: 45.144.51.35
-- name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  type: trojan
-  server: 137.74.41.156
-  port: 7494
-  uuid: zL7CpPYxhvFtYqm2yAbHrw
-  network: tcp
-  tls: false
-  servername: 137.74.41.156
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.157.159.30
-  type: trojan
-  server: 35.157.159.30
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 35.157.159.30
-  client-fingerprint: chrome
 - name: TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   type: trojan
   server: mfa.gov.ua
@@ -74,10 +74,10 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.43.82
-  - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.159.30
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.96.120
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.22.38
+  - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   - TROJAN-TCP-TLS-🇳🇿(NZ)-45.15.140.107
   tolerance: 50
@@ -96,10 +96,10 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.43.82
-  - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.157.159.30
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.96.120
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.22.38
+  - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   - TROJAN-TCP-TLS-🇳🇿(NZ)-45.15.140.107
 rule-providers:
