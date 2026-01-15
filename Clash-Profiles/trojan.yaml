@@ -22,14 +22,6 @@ proxies:
   network: tcp
   tls: false
   servername: 137.74.41.156
-- name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  type: trojan
-  server: 45.144.51.35
-  port: 7390
-  uuid: zL7CpPYxhvFtYqm2yAbHrw
-  network: tcp
-  tls: false
-  servername: 45.144.51.35
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.131.135
   type: trojan
   server: 35.181.131.135
@@ -39,57 +31,31 @@ proxies:
   tls: true
   servername: 35.181.131.135
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.182.2.148
+- name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   type: trojan
-  server: 63.182.2.148
+  server: 45.144.51.35
+  port: 7390
+  uuid: zL7CpPYxhvFtYqm2yAbHrw
+  network: tcp
+  tls: false
+  servername: 45.144.51.35
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.193.207.240
+  type: trojan
+  server: 18.193.207.240
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: 63.182.2.148
+  servername: 18.193.207.240
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.182.2.148_1
-  type: trojan
-  server: 63.182.2.148
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.182.2.148_2
-  type: trojan
-  server: 63.182.2.148
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-www.speedtest.net
-  type: trojan
-  server: www.speedtest.net
-  port: 443
-  uuid: jTT1K.bu<(7&
-  network: ws
-  tls: true
-  servername: 022.eleCTrOCEllCo-cf-022.wOrKeRs.DEV
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoickdxMEZTZ2pCejVhIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
-    headers:
-      Host: 022.electrocellco-cf-022.workers.dev
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.131.135
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.182.2.148
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.182.2.148_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.182.2.148_2
-  - TROJAN-WS-TLS-🇺🇸(US)-www.speedtest.net
+  - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.207.240
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -107,12 +73,9 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.131.135
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.182.2.148
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.182.2.148_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-63.182.2.148_2
-  - TROJAN-WS-TLS-🇺🇸(US)-www.speedtest.net
+  - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.193.207.240
 rule-providers:
   adblock:
     type: http
