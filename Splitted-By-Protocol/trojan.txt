@@ -1,6 +1,4 @@
 trojan://zL7CpPYxhvFtYqm2yAbHrw@137.74.41.156:7494?security=none&headerType=none&type=tcp#TROJAN-TCP-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-137.74.41.156
-trojan://telegram-id-privatevpns@35.181.111.41:22222?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-35.181.111.41
-trojan://telegram-id-directvpn@35.158.18.102:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-35.158.18.102
-trojan://telegram-id-privatevpns@35.158.18.102:22222?security=tls&amp%3Balpn=http/1.1&amp%3BheaderType=none&amp%3Btype=tcp&amp%3Bsni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-35.158.18.102_1
-trojan://telegram-id-privatevpns@35.158.18.102:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-35.158.18.102_2
+trojan://telegram-id-privatevpns@35.181.111.41:22222?security=tls&amp%3Balpn=http/1.1&amp%3BheaderType=none&amp%3Btype=tcp&amp%3Bsni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-35.181.111.41
 trojan://zL7CpPYxhvFtYqm2yAbHrw@45.144.51.35:7390?security=none&headerType=none&type=tcp#TROJAN-TCP-%F0%9F%87%B5%F0%9F%87%B1%28PL%29-45.144.51.35
+trojan://telegram-id-privatevpns@18.185.219.138:22222?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-18.185.219.138
