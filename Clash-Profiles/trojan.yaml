@@ -14,6 +14,15 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.149.230
+  type: trojan
+  server: 13.37.149.230
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: 13.37.149.230
+  client-fingerprint: chrome
 - name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   type: trojan
   server: 137.74.41.156
@@ -22,14 +31,27 @@ proxies:
   network: tcp
   tls: false
   servername: 137.74.41.156
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.17.163.123
   type: trojan
-  server: 35.181.111.41
+  server: 104.17.163.123
+  port: 8443
+  uuid: z8v799c6ktw2
+  network: ws
+  tls: true
+  servername: 2nsb0tvw4gaj38d6pfnxfjv9iqsfjpyr9kr6p.zjde5.de5.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 2nsb0tvw4gaj38d6pfnxfjv9iqsfjpyr9kr6p.zjde5.de5.net
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.149.230_1
+  type: trojan
+  server: 13.37.149.230
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: 35.181.111.41
+  servername: 13.37.149.230
   client-fingerprint: chrome
 - name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   type: trojan
@@ -39,23 +61,25 @@ proxies:
   network: tcp
   tls: false
   servername: 45.144.51.35
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.185.219.138
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.237.244.223
   type: trojan
-  server: 18.185.219.138
+  server: 15.237.244.223
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: 18.185.219.138
+  servername: 15.237.244.223
   client-fingerprint: chrome
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.149.230
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41
+  - TROJAN-WS-TLS-🇺🇸(US)-104.17.163.123
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.149.230_1
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.185.219.138
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.244.223
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -72,10 +96,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.149.230
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.111.41
+  - TROJAN-WS-TLS-🇺🇸(US)-104.17.163.123
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.149.230_1
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-TCP-TLS-🇩🇪(DE)-18.185.219.138
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.237.244.223
 rule-providers:
   adblock:
     type: http
