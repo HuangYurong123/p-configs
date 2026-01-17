@@ -14,6 +14,14 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
+  type: trojan
+  server: 137.74.41.156
+  port: 7494
+  uuid: zL7CpPYxhvFtYqm2yAbHrw
+  network: tcp
+  tls: false
+  servername: 137.74.41.156
 - name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.27.89
   type: trojan
   server: 15.236.27.89
@@ -23,14 +31,6 @@ proxies:
   tls: true
   servername: 15.236.27.89
   client-fingerprint: chrome
-- name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  type: trojan
-  server: 137.74.41.156
-  port: 7494
-  uuid: zL7CpPYxhvFtYqm2yAbHrw
-  network: tcp
-  tls: false
-  servername: 137.74.41.156
 - name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   type: trojan
   server: 45.144.51.35
@@ -39,43 +39,79 @@ proxies:
   network: tcp
   tls: false
   servername: 45.144.51.35
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.156.113.72
+- name: TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
   type: trojan
-  server: 35.156.113.72
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
+  server: www.visa.com
+  port: 8443
+  uuid: ifu4wsmf6bta
+  network: ws
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: x8e01ilnehffr6.zjde5.de5.net
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.156.113.72_1
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: x8e01ilnehffr6.zjde5.de5.net
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-63.182.140.159
   type: trojan
-  server: 35.156.113.72
+  server: 63.182.140.159
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: trojan.burgerip.co.uk
+  servername: 63.182.140.159
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-35.156.113.72_2
+- name: TROJAN-WS-TLS-🇺🇸(US)-104.17.163.123
   type: trojan
-  server: 35.156.113.72
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
+  server: 104.17.163.123
+  port: 8443
+  uuid: z8v799c6ktw2
+  network: ws
   tls: true
-  servername: 35.156.113.72
+  servername: 2nsb0tvw4gaj38d6pfnxfjv9iqsfjpyr9kr6p.zjde5.de5.net
   client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 2nsb0tvw4gaj38d6pfnxfjv9iqsfjpyr9kr6p.zjde5.de5.net
+- name: TROJAN-WS-TLS-🇺🇸(US)-172.64.154.125
+  type: trojan
+  server: 172.64.154.125
+  port: 8443
+  uuid: zqe8nnclzgsq
+  network: ws
+  tls: true
+  servername: x02yu8frl452vo9o9ncevjsk6zo.zjde5.de5.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: x02yu8frl452vo9o9ncevjsk6zo.zjde5.de5.net
+- name: TROJAN-WS-TLS-🇺🇸(US)-www.shopify.com
+  type: trojan
+  server: www.shopify.com
+  port: 8443
+  uuid: 4w90c5nc5x10
+  network: ws
+  tls: true
+  servername: xwuw5xydh3x0sypnzgqjtd0fwvjj9nt3qmwoy78lbhr1rj7ihna6.zjde5.de5.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: xwuw5xydh3x0sypnzgqjtd0fwvjj9nt3qmwoy78lbhr1rj7ihna6.zjde5.de5.net
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.27.89
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.27.89
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.113.72
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.113.72_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.113.72_2
+  - TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.182.140.159
+  - TROJAN-WS-TLS-🇺🇸(US)-104.17.163.123
+  - TROJAN-WS-TLS-🇺🇸(US)-172.64.154.125
+  - TROJAN-WS-TLS-🇺🇸(US)-www.shopify.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -92,12 +128,14 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.27.89
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.27.89
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.113.72
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.113.72_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-35.156.113.72_2
+  - TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
+  - TROJAN-TCP-TLS-🇩🇪(DE)-63.182.140.159
+  - TROJAN-WS-TLS-🇺🇸(US)-104.17.163.123
+  - TROJAN-WS-TLS-🇺🇸(US)-172.64.154.125
+  - TROJAN-WS-TLS-🇺🇸(US)-www.shopify.com
 rule-providers:
   adblock:
     type: http
