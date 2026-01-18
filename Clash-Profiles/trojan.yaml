@@ -14,19 +14,6 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
-  type: trojan
-  server: www.visa.com
-  port: 8443
-  uuid: ifu4wsmf6bta
-  network: ws
-  tls: true
-  servername: x8e01ilnehffr6.zjde5.de5.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: x8e01ilnehffr6.zjde5.de5.net
 - name: TROJAN-WS-TLS-🇺🇸(US)-172.64.154.125
   type: trojan
   server: 172.64.154.125
@@ -53,6 +40,19 @@ proxies:
     path: /?ed=2560
     headers:
       Host: 2nsb0tvw4gaj38d6pfnxfjv9iqsfjpyr9kr6p.zjde5.de5.net
+- name: TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
+  type: trojan
+  server: www.visa.com
+  port: 8443
+  uuid: ifu4wsmf6bta
+  network: ws
+  tls: true
+  servername: x8e01ilnehffr6.zjde5.de5.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: x8e01ilnehffr6.zjde5.de5.net
 - name: TROJAN-WS-TLS-🇺🇸(US)-www.shopify.com
   type: trojan
   server: www.shopify.com
@@ -66,14 +66,14 @@ proxies:
     path: /?ed=2560
     headers:
       Host: xwuw5xydh3x0sypnzgqjtd0fwvjj9nt3qmwoy78lbhr1rj7ihna6.zjde5.de5.net
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.180.16.16
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.223.157
   type: trojan
-  server: 35.180.16.16
+  server: 15.236.223.157
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: 35.180.16.16
+  servername: 15.236.223.157
   client-fingerprint: chrome
 - name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   type: trojan
@@ -83,7 +83,7 @@ proxies:
   network: tcp
   tls: false
   servername: 137.74.41.156
-- name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35
+- name: TROJAN-TCP-🌐(XX)-45.144.51.35
   type: trojan
   server: 45.144.51.35
   port: 7390
@@ -91,45 +91,17 @@ proxies:
   network: tcp
   tls: false
   servername: 45.144.51.35
-- name: TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
-  type: trojan
-  server: mfa.gov.ua
-  port: 443
-  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  network: ws
-  tls: true
-  servername: _acme-challenge.2go.cloudns.be
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: _acme-challenge.2go.cloudns.be
-- name: TROJAN-WS-TLS-🇺🇸(US)-store.ubi.com
-  type: trojan
-  server: store.ubi.com
-  port: 443
-  uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  network: ws
-  tls: true
-  servername: _acme-challenge.2go.cloudns.be
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: _acme-challenge.2go.cloudns.be
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
   - TROJAN-WS-TLS-🇺🇸(US)-172.64.154.125
   - TROJAN-WS-TLS-🇺🇸(US)-104.17.163.123
+  - TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
   - TROJAN-WS-TLS-🇺🇸(US)-www.shopify.com
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.16.16
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.223.157
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
-  - TROJAN-WS-TLS-🇺🇸(US)-store.ubi.com
+  - TROJAN-TCP-🌐(XX)-45.144.51.35
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -146,15 +118,13 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
   - TROJAN-WS-TLS-🇺🇸(US)-172.64.154.125
   - TROJAN-WS-TLS-🇺🇸(US)-104.17.163.123
+  - TROJAN-WS-TLS-🇺🇸(US)-www.visa.com
   - TROJAN-WS-TLS-🇺🇸(US)-www.shopify.com
-  - TROJAN-TCP-TLS-🇫🇷(FR)-35.180.16.16
+  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.223.157
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
-  - TROJAN-WS-TLS-🇺🇸(US)-store.ubi.com
+  - TROJAN-TCP-🌐(XX)-45.144.51.35
 rule-providers:
   adblock:
     type: http
