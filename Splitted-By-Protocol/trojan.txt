@@ -1,3 +1,9 @@
 trojan://zL7CpPYxhvFtYqm2yAbHrw@137.74.41.156:7494?security=none&headerType=none&type=tcp#TROJAN-TCP-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-137.74.41.156
-trojan://zL7CpPYxhvFtYqm2yAbHrw@45.144.51.35:7390?security=none&headerType=none&type=tcp#TROJAN-TCP-%F0%9F%87%B5%F0%9F%87%B1%28PL%29-45.144.51.35
+trojan://telegram-id-directvpn@13.36.202.63:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-13.36.202.63
+trojan://telegram-id-privatevpns@3.76.159.25:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-3.76.159.25
+trojan://telegram-id-privatevpns@3.76.159.25:22222?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-3.76.159.25_1
+trojan://telegram-id-directvpn@3.76.159.25:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-3.76.159.25_2
 trojan://x.8ur1QiCyzlRHXeaB5UwoDfgZ04s@45.32.158.138:20994?security=tls&headerType=none&type=tcp&sni=ads.x5.ru#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-45.32.158.138
+trojan://zL7CpPYxhvFtYqm2yAbHrw@45.144.51.35:7390?security=none&headerType=none&type=tcp#TROJAN-TCP-%F0%9F%87%B5%F0%9F%87%B1%28PL%29-45.144.51.35
+trojan://87d1bfd4-574e-4c96-ad42-0426f27461ff@mfa.gov.ua:443?path=%2F&security=tls&host=_acme-challenge.2go.cloudns.be&type=ws&sni=_acme-challenge.2go.cloudns.be#TROJAN-WS-TLS-%F0%9F%87%BA%F0%9F%87%B8%28US%29-mfa.gov.ua
+trojan://87d1bfd4-574e-4c96-ad42-0426f27461ff@store.ubi.com:443/?type=ws&host=_acme-challenge.2go.cloudns.be&path=%2F&security=tls&sni=_acme-challenge.2go.cloudns.be&allowInsecure=1#TROJAN-WS-TLS-%F0%9F%87%BA%F0%9F%87%B8%28US%29-store.ubi.com
