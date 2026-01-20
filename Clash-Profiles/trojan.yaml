@@ -14,6 +14,24 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.174.80
+  type: trojan
+  server: 13.37.174.80
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.174.80_1
+  type: trojan
+  server: 13.37.174.80
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 13.37.174.80
+  client-fingerprint: chrome
 - name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   type: trojan
   server: 137.74.41.156
@@ -22,41 +40,32 @@ proxies:
   network: tcp
   tls: false
   servername: 137.74.41.156
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.202.63
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.37.174.80_2
   type: trojan
-  server: 13.36.202.63
+  server: 13.37.174.80
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.76.159.25
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-35.181.110.226
   type: trojan
-  server: 3.76.159.25
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.76.159.25_1
-  type: trojan
-  server: 3.76.159.25
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 3.76.159.25
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-3.76.159.25_2
-  type: trojan
-  server: 3.76.159.25
+  server: 35.181.110.226
   port: 22223
   uuid: telegram-id-directvpn
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-GRPC-TLS-🇺🇸(US)-kaizen-us-13.cmydns2.com
+  type: trojan
+  server: kaizen-us-13.cmydns2.com
+  port: 443
+  uuid: 8dc09bed-0830-378b-ba0e-53606acf4514cmynw
+  network: grpc
+  tls: true
+  servername: www.zueuqnpjvcllc.co
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
   type: trojan
@@ -67,17 +76,9 @@ proxies:
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35
+- name: TROJAN-WS-TLS-🇺🇸(US)-store.ubi.com
   type: trojan
-  server: 45.144.51.35
-  port: 7390
-  uuid: zL7CpPYxhvFtYqm2yAbHrw
-  network: tcp
-  tls: false
-  servername: 45.144.51.35
-- name: TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
-  type: trojan
-  server: mfa.gov.ua
+  server: store.ubi.com
   port: 443
   uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
   network: ws
@@ -88,9 +89,9 @@ proxies:
     path: /
     headers:
       Host: _acme-challenge.2go.cloudns.be
-- name: TROJAN-WS-TLS-🇺🇸(US)-store.ubi.com
+- name: TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   type: trojan
-  server: store.ubi.com
+  server: mfa.gov.ua
   port: 443
   uuid: 87d1bfd4-574e-4c96-ad42-0426f27461ff
   network: ws
@@ -105,15 +106,15 @@ proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.174.80
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.174.80_1
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.202.63
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.159.25
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.159.25_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.159.25_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.174.80_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.110.226
+  - TROJAN-GRPC-TLS-🇺🇸(US)-kaizen-us-13.cmydns2.com
   - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
-  - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   - TROJAN-WS-TLS-🇺🇸(US)-store.ubi.com
+  - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -130,15 +131,15 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.174.80
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.174.80_1
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.202.63
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.159.25
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.159.25_1
-  - TROJAN-TCP-TLS-🇩🇪(DE)-3.76.159.25_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-13.37.174.80_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-35.181.110.226
+  - TROJAN-GRPC-TLS-🇺🇸(US)-kaizen-us-13.cmydns2.com
   - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
-  - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
   - TROJAN-WS-TLS-🇺🇸(US)-store.ubi.com
+  - TROJAN-WS-TLS-🇺🇸(US)-mfa.gov.ua
 rule-providers:
   adblock:
     type: http
