@@ -14,31 +14,59 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.124.96
   type: trojan
-  server: 137.74.41.156
-  port: 7494
-  uuid: zL7CpPYxhvFtYqm2yAbHrw
-  network: tcp
-  tls: false
-  servername: 137.74.41.156
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.116.248
-  type: trojan
-  server: 13.36.116.248
-  port: 22222
-  uuid: telegram-id-privatevpns
+  server: 51.44.124.96
+  port: 22223
+  uuid: telegram-id-directvpn
   network: tcp
   tls: true
-  servername: 13.36.116.248
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.116.248_1
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.196.155.223
   type: trojan
-  server: 13.36.116.248
+  server: 18.196.155.223
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.124.96_1
+  type: trojan
+  server: 51.44.124.96
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 51.44.124.96
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.124.96_2
+  type: trojan
+  server: 51.44.124.96
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: 51.44.124.96
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.196.155.223_1
+  type: trojan
+  server: 18.196.155.223
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.196.155.223_2
+  type: trojan
+  server: 18.196.155.223
+  port: 22222
+  uuid: telegram-id-privatevpns
+  network: tcp
+  tls: true
+  servername: 18.196.155.223
   client-fingerprint: chrome
 - name: TROJAN-TCP-🇵🇱(PL)-45.144.51.35
   type: trojan
@@ -48,11 +76,11 @@ proxies:
   network: tcp
   tls: false
   servername: 45.144.51.35
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.36.116.248_2
+- name: TROJAN-TCP-TLS-🇫🇷(FR)-51.44.124.96_3
   type: trojan
-  server: 13.36.116.248
-  port: 22223
-  uuid: telegram-id-directvpn
+  server: 51.44.124.96
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
   servername: trojan.burgerip.co.uk
@@ -66,16 +94,28 @@ proxies:
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
+- name: TROJAN-TCP-🇫🇷(FR)-137.74.41.156
+  type: trojan
+  server: 137.74.41.156
+  port: 7494
+  uuid: zL7CpPYxhvFtYqm2yAbHrw
+  network: tcp
+  tls: false
+  servername: 137.74.41.156
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.116.248
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.116.248_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.124.96
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.196.155.223
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.124.96_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.124.96_2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.196.155.223_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.196.155.223_2
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.116.248_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.124.96_3
   - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
+  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -92,12 +132,16 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.116.248
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.116.248_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.124.96
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.196.155.223
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.124.96_1
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.124.96_2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.196.155.223_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.196.155.223_2
   - TROJAN-TCP-🇵🇱(PL)-45.144.51.35
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.36.116.248_2
+  - TROJAN-TCP-TLS-🇫🇷(FR)-51.44.124.96_3
   - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
+  - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
 rule-providers:
   adblock:
     type: http
