@@ -1,6 +1,6 @@
-trojan://telegram-id-privatevpns@51.44.124.96:22222?security=tls&amp%3Balpn=http/1.1&amp%3BheaderType=none&amp%3Btype=tcp&amp%3Bsni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-51.44.124.96
-trojan://telegram-id-privatevpns@3.70.150.185:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-3.70.150.185
-trojan://telegram-id-privatevpns@51.44.124.96:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-51.44.124.96_1
-trojan://telegram-id-directvpn@3.70.150.185:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-3.70.150.185_1
-trojan://telegram-id-privatevpns@3.70.150.185:22222?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-3.70.150.185_2
+trojan://telegram-id-privatevpns@15.236.185.25:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-15.236.185.25
 trojan://zL7CpPYxhvFtYqm2yAbHrw@137.74.41.156:7494?security=none&headerType=none&type=tcp#TROJAN-TCP-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-137.74.41.156
+trojan://telegram-id-privatevpns@15.236.185.25:22222?security=tls&amp%3Balpn=http/1.1&amp%3BheaderType=none&amp%3Btype=tcp&amp%3Bsni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-15.236.185.25_1
+trojan://telegram-id-directvpn@15.236.185.25:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-15.236.185.25_2
+trojan://x.8ur1QiCyzlRHXeaB5UwoDfgZ04s@45.32.158.138:20994/?type=tcp&security=tls&sni=ads.x5.ru&allowInsecure=1#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-45.32.158.138
+trojan://T9BpZIVMNv@162.159.152.4:8443?path=%2Famd&security=tls&serviseName=@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray&alpn=h3%2Ch2%2Chttp%2F1.1&insecure=0&host=sweden.vmaxpanel.com&fp=chrome&type=ws&allowInsecure=0&sni=sweden.vmaxpanel.com#TROJAN-WS-TLS-%F0%9F%87%B8%F0%9F%87%AA%28SE%29-162.159.152.4
