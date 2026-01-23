@@ -22,35 +22,24 @@ proxies:
   network: tcp
   tls: false
   servername: 137.74.41.156
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
+- name: TROJAN-WS-🇩🇪(DE)-cdn.turbooserver.com
   type: trojan
-  server: 45.32.158.138
-  port: 20994
-  uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: TROJAN-WS-TLS-🇺🇸(US)-cdn.halazzon.ir
-  type: trojan
-  server: cdn.halazzon.ir
-  port: 443
-  uuid: de57fef4-a939-44b3-9bce-f7e9fb12347a
+  server: cdn.turbooserver.com
+  port: 80
+  uuid: TurbooServer
   network: ws
-  tls: true
-  servername: source.zoom.us.heavenlyblue.qzz.io
-  client-fingerprint: chrome
+  tls: false
+  servername: cdn.turbooserver.com
   ws-opts:
-    path: /175.45.183.67:443
+    path: /ed=25
     headers:
-      Host: source.zoom.us.heavenlyblue.qzz.io
+      Host: jone-turboo-server.com
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
-  - TROJAN-WS-TLS-🇺🇸(US)-cdn.halazzon.ir
+  - TROJAN-WS-🇩🇪(DE)-cdn.turbooserver.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -68,8 +57,7 @@ proxy-groups:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
   - TROJAN-TCP-🇫🇷(FR)-137.74.41.156
-  - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
-  - TROJAN-WS-TLS-🇺🇸(US)-cdn.halazzon.ir
+  - TROJAN-WS-🇩🇪(DE)-cdn.turbooserver.com
 rule-providers:
   adblock:
     type: http

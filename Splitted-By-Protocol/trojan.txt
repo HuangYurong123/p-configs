@@ -1,3 +1,2 @@
 trojan://zL7CpPYxhvFtYqm2yAbHrw@137.74.41.156:7494?security=none&headerType=none&type=tcp#TROJAN-TCP-%F0%9F%87%AB%F0%9F%87%B7%28FR%29-137.74.41.156
-trojan://x.8ur1QiCyzlRHXeaB5UwoDfgZ04s@45.32.158.138:20994/?type=tcp&security=tls&sni=ads.x5.ru&allowInsecure=1#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-45.32.158.138
-trojan://de57fef4-a939-44b3-9bce-f7e9fb12347a@cdn.halazzon.ir:443?allowInsecure=1&host=source.zoom.us.heavenlyblue.qzz.io&insecure=1&path=%2F175.45.183.67%3A443&security=tls&sni=source.zoom.us.heavenlyblue.qzz.io&type=ws#TROJAN-WS-TLS-%F0%9F%87%BA%F0%9F%87%B8%28US%29-cdn.halazzon.ir
+trojan://TurbooServer@cdn.turbooserver.com:80?type=ws&host=jone-turboo-server.com&path=/ed%3D25&security=none#TROJAN-WS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-cdn.turbooserver.com
