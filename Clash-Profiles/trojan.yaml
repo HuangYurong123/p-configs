@@ -14,54 +14,9 @@ dns:
   - 8.8.8.8
   - 8.8.4.4
 proxies:
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.201
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.198.0.30
   type: trojan
-  server: 13.39.197.201
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.72.233
-  type: trojan
-  server: 15.236.72.233
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 15.236.72.233
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.72.233_1
-  type: trojan
-  server: 15.236.72.233
-  port: 22223
-  uuid: telegram-id-directvpn
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.201_1
-  type: trojan
-  server: 13.39.197.201
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: 13.39.197.201
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.201_2
-  type: trojan
-  server: 13.39.197.201
-  port: 22222
-  uuid: telegram-id-privatevpns
-  network: tcp
-  tls: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: TROJAN-TCP-TLS-🇫🇷(FR)-15.236.72.233_2
-  type: trojan
-  server: 15.236.72.233
+  server: 18.198.0.30
   port: 22222
   uuid: telegram-id-privatevpns
   network: tcp
@@ -80,14 +35,23 @@ proxies:
     path: /ed=25
     headers:
       Host: jone-turboo-server.com
-- name: TROJAN-TCP-TLS-🇩🇪(DE)-140.82.35.244
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.198.0.30_1
   type: trojan
-  server: 140.82.35.244
-  port: 20994
-  uuid: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  server: 18.198.0.30
+  port: 22222
+  uuid: telegram-id-privatevpns
   network: tcp
   tls: true
-  servername: ads.x5.ru
+  servername: 18.198.0.30
+  client-fingerprint: chrome
+- name: TROJAN-TCP-TLS-🇩🇪(DE)-18.198.0.30_2
+  type: trojan
+  server: 18.198.0.30
+  port: 22223
+  uuid: telegram-id-directvpn
+  network: tcp
+  tls: true
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
 - name: TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
   type: trojan
@@ -107,46 +71,16 @@ proxies:
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: TROJAN-WS-🇫🇮(FI)-cdn.turbooserver.com
-  type: trojan
-  server: cdn.turbooserver.com
-  port: 80
-  uuid: TurbooServer
-  network: ws
-  tls: false
-  servername: cdn.turbooserver.com
-  ws-opts:
-    path: /ed
-    headers:
-      Host: turboo-server.online
-- name: TROJAN-WS-🇫🇮(FI)-cdn1.turbooserver.com
-  type: trojan
-  server: cdn1.turbooserver.com
-  port: 80
-  uuid: TurbooServer
-  network: ws
-  tls: false
-  servername: cdn1.turbooserver.com
-  ws-opts:
-    path: /ed
-    headers:
-      Host: turboo-server.online
 proxy-groups:
 - name: ⚡ Auto-Select-TROJAN
   type: url-test
   proxies: &id001
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.201
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.72.233
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.72.233_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.201_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.201_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.72.233_2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.0.30
   - TROJAN-WS-🇩🇪(DE)-cdn.turbooserver.com
-  - TROJAN-TCP-TLS-🇩🇪(DE)-140.82.35.244
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.0.30_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.0.30_2
   - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
   - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138_1
-  - TROJAN-WS-🇫🇮(FI)-cdn.turbooserver.com
-  - TROJAN-WS-🇫🇮(FI)-cdn1.turbooserver.com
   tolerance: 50
   lazy: false
   url: https://aistudio.google.com/prompts/new_chat
@@ -163,18 +97,12 @@ proxy-groups:
   proxies:
   - ⚡ Auto-Select-TROJAN
   - 🔗 Auto-Failover-TROJAN
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.201
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.72.233
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.72.233_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.201_1
-  - TROJAN-TCP-TLS-🇫🇷(FR)-13.39.197.201_2
-  - TROJAN-TCP-TLS-🇫🇷(FR)-15.236.72.233_2
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.0.30
   - TROJAN-WS-🇩🇪(DE)-cdn.turbooserver.com
-  - TROJAN-TCP-TLS-🇩🇪(DE)-140.82.35.244
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.0.30_1
+  - TROJAN-TCP-TLS-🇩🇪(DE)-18.198.0.30_2
   - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138
   - TROJAN-TCP-TLS-🇩🇪(DE)-45.32.158.138_1
-  - TROJAN-WS-🇫🇮(FI)-cdn.turbooserver.com
-  - TROJAN-WS-🇫🇮(FI)-cdn1.turbooserver.com
 rule-providers:
   adblock:
     type: http
