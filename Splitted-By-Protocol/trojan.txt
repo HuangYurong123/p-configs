@@ -1,6 +1,2 @@
-trojan://telegram-id-privatevpns@18.198.0.30:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-18.198.0.30
 trojan://TurbooServer@cdn.turbooserver.com:80?path=%2Fed%3D25&security=none&host=jone-turboo-server.com&type=ws#TROJAN-WS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-cdn.turbooserver.com
-trojan://telegram-id-privatevpns@18.198.0.30:22222?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-18.198.0.30_1
-trojan://telegram-id-directvpn@18.198.0.30:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-18.198.0.30_2
-trojan://x.8ur1QiCyzlRHXeaB5UwoDfgZ04s@45.32.158.138:20994?security=tls&amp;insecure=1&amp;headerType=none&amp;type=tcp&amp;allowInsecure=1&amp;sni=ads.x5.ru#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-45.32.158.138
-trojan://x.8ur1QiCyzlRHXeaB5UwoDfgZ04s@45.32.158.138:20994/?type=tcp&security=tls&sni=ads.x5.ru&allowInsecure=1#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-45.32.158.138_1
+trojan://x.8ur1QiCyzlRHXeaB5UwoDfgZ04s@45.32.158.138:20994?security=tls&insecure=1&headerType=none&type=tcp&allowInsecure=1&sni=ads.x5.ru#TROJAN-TCP-TLS-%F0%9F%87%A9%F0%9F%87%AA%28DE%29-45.32.158.138
